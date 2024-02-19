@@ -1,0 +1,1087 @@
+15-12-2023 16:17:32; INFO; parameters.<module>; flagNovember = True
+15-12-2023 16:17:32; INFO; parameters.<module>; Parameter configs finished.
+15-12-2023 16:17:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:17:36; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:17:36; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:17:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:17:37; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "GET /teams/departamentopessoal/_api/Web/GetFileByServerRelativePath(decodedurl='/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/Planilha_modelo_CENTROS%20DE%20CUSTOS_DOCUMENTACAO.xlsx')/$value HTTP/1.1" 200 100851
+15-12-2023 16:17:37; INFO; functions.sharepointGetExcelFile; Request to get "Planilha_modelo_CENTROS DE CUSTOS_DOCUMENTACAO.xlsx" worksheet successfull.
+15-12-2023 16:17:37; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:17:37; INFO; process.start; === START process started! ===
+15-12-2023 16:17:40; DEBUG; process.start; FPW program opened.
+15-12-2023 16:17:40; INFO; functions.turn_numlock_on; NUM LOCK is now activated.
+15-12-2023 16:17:41; DEBUG; process.start; FPW user code written.
+15-12-2023 16:17:41; DEBUG; process.start; TAB key pressed.
+15-12-2023 16:17:43; DEBUG; process.start; FPW Password written.
+15-12-2023 16:17:43; DEBUG; process.start; OK button clicked.
+15-12-2023 16:17:50; DEBUG; process.start; "002" written on Código Empresa form.
+15-12-2023 16:17:59; DEBUG; process.start; "Emissões" button clicked.
+15-12-2023 16:17:59; INFO; process.start; === START process finished! ===
+15-12-2023 16:17:59; INFO; main.main; Starting CMAT ENGENHARIA loop...
+
+
+15-12-2023 16:18:00; INFO; functions.cmatEngenhariaSheetData; CMAT ENGENHARIA full dict list: [{'col1': '02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}, {'col1': '02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:18:00; INFO; functions.cmatEngenhariaSheetData; CMAT ENGENHARIA full dict list: [{'col1': '02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}, {'col1': '02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:18:00; INFO; process.relfuncs; Current Contrato: 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP - 1/2
+15-12-2023 16:18:00; INFO; process.relfuncs; "Contrato" number only: 135052
+15-12-2023 16:18:00; INFO; process.relfuncs; "Filial" only: SP
+15-12-2023 16:18:00; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP started! ===
+15-12-2023 16:18:03; DEBUG; process.relfuncs; "Funcionários" button clicked.
+15-12-2023 16:18:04; DEBUG; process.relfuncs; "Relação de Funcionários" button clicked.
+15-12-2023 16:18:06; DEBUG; process.relfuncs; "Limpar Relação de Funcionários" button clicked.
+15-12-2023 16:18:07; DEBUG; process.relfuncs; Clicked on "Impressora" option in "Impressão".
+15-12-2023 16:18:07; DEBUG; process.relfuncs; "Parâmetros" button clicked.
+15-12-2023 16:18:09; DEBUG; process.relfuncs; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:18:11; DEBUG; process.relfuncs; "Lista de Lotações" selected in "Selecionar por".
+15-12-2023 16:18:12; DEBUG; process.relfuncs; "3 - PROJETOS" selected in "Agrupar pelo nível" combobox
+15-12-2023 16:18:16; DEBUG; process.relfuncs; "3 - PROJETOS" selected in "Nível" combobox
+15-12-2023 16:19:57; DEBUG; process.relfuncs; "Folhas e Situações" button clicked.
+15-12-2023 16:19:58; DEBUG; process.relfuncs; Scrolled up the bar.
+15-12-2023 16:19:59; DEBUG; process.relfuncs; "01 - MENSAL" selected.
+15-12-2023 16:19:59; DEBUG; process.relfuncs; "05 - RESCISÃO" selected.
+15-12-2023 16:20:00; DEBUG; process.relfuncs; "07 - COMP DO MÊS" selected.
+15-12-2023 16:20:01; DEBUG; process.relfuncs; "08 - COMP FORA DO MÊS" selected.
+15-12-2023 16:20:01; DEBUG; process.relfuncs; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:20:03; DEBUG; process.relfuncs; Scrolled down the bar.
+15-12-2023 16:20:04; DEBUG; process.relfuncs; "50 - TOT RESC 1" selected.
+15-12-2023 16:20:06; DEBUG; process.relfuncs; "60 - TOT RESC 2" selected.
+15-12-2023 16:20:08; DEBUG; process.relfuncs; Clicked on "Data de Referência" field.
+15-12-2023 16:20:09; DEBUG; process.relfuncs; "112023" written in "Data de Referência" field.
+15-12-2023 16:20:10; DEBUG; process.relfuncs; Clicked on "Fechar" button.
+15-12-2023 16:20:15; DEBUG; process.relfuncs; "Parâmetros" screen disappeared.
+15-12-2023 16:20:19; DEBUG; process.relfuncs; Clicked on "Emitir" button.
+15-12-2023 16:20:49; DEBUG; process.relfuncs; Screen for saving PDF found.
+15-12-2023 16:20:49; INFO; process.relfuncs; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP" created.
+15-12-2023 16:20:53; DEBUG; process.relfuncs; File name field clean.
+15-12-2023 16:20:54; INFO; process.relfuncs; "C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\135052\2023\112023\SP\REL FUNCS 112023.pdf" written on name field.
+15-12-2023 16:20:56; DEBUG; process.relfuncs; ENTER key pressed.
+15-12-2023 16:21:00; DEBUG; process.relfuncs; "Fechar" button clicked in Relação de Funcionários Screen
+15-12-2023 16:21:01; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:21:02; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:21:02; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:21:02; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "135052" in Sharepoint.
+15-12-2023 16:21:02; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:02; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:02; INFO; functions.sharepointCreateMultipleFolder; The folder "135052" was created succesfully in Sharepoint.
+15-12-2023 16:21:02; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:21:02; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:03; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:03; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:21:03; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:21:03; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:03; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:03; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:21:03; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "SP" in Sharepoint.
+15-12-2023 16:21:03; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:03; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:03; INFO; functions.sharepointCreateMultipleFolder; The folder "SP" was created succesfully in Sharepoint.
+15-12-2023 16:21:03; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP" created successfully.
+15-12-2023 16:21:03; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:21:04; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:21:04; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:21:04; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/REL FUNCS 112023.pdf" to Sharepoint.
+15-12-2023 16:21:04; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:04; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/135052/2023/112023/SP')/Files/add(url='REL%20FUNCS%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:21:04; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP/REL FUNCS 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:21:04; INFO; process.relfuncs; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/REL FUNCS 112023.pdf"
+15-12-2023 16:21:04; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:21:05; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP finished! ===
+15-12-2023 16:21:10; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:21:11; INFO; functions.cmatEngenhariaSheetData; CMAT ENGENHARIA full dict list: [{'col1': '02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}, {'col1': '02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:21:11; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP started! ===
+15-12-2023 16:21:11; INFO; process.folhaDePagamento; Current Contrato: 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP - 1/2
+15-12-2023 16:21:11; INFO; process.folhaDePagamento; "Contrato" number only: 135052
+15-12-2023 16:21:11; INFO; process.folhaDePagamento; "Filial" only: SP
+15-12-2023 16:21:13; DEBUG; process.folhaDePagamento; "Operacionais" button pressed.
+15-12-2023 16:21:14; DEBUG; process.folhaDePagamento; "Folha de Pagamento" button pressed.
+15-12-2023 16:21:16; DEBUG; process.folhaDePagamento; "Limpar" button pressed.
+15-12-2023 16:21:16; DEBUG; process.folhaDePagamento; "Impressora" button pressed.
+15-12-2023 16:21:16; DEBUG; process.folhaDePagamento; "Centro de Custo" button pressed.
+15-12-2023 16:21:17; DEBUG; process.folhaDePagamento; "Imprime Número de Funcionários por Situação" button pressed.
+15-12-2023 16:21:17; DEBUG; process.folhaDePagamento; "Totalizar Proventos" button pressed.
+15-12-2023 16:21:18; DEBUG; process.folhaDePagamento; "Imprime Diferença / Devolução por Linhas" button pressed.
+15-12-2023 16:21:19; DEBUG; process.folhaDePagamento; "Emitir" button pressed.
+15-12-2023 16:21:19; INFO; process.folhaDePagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP" created.
+15-12-2023 16:21:24; DEBUG; process.folhaDePagamento; Screen for saving PDF found.
+15-12-2023 16:21:28; DEBUG; process.folhaDePagamento; File name field clean.
+15-12-2023 16:21:31; INFO; process.folhaDePagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\135052\2023\112023\SP\FOLHA DE PAGAMENTO 112023.pdf" written on name field.
+15-12-2023 16:21:32; DEBUG; process.folhaDePagamento; ENTER key pressed.
+15-12-2023 16:21:32; INFO; process.folhaDePagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/FOLHA DE PAGAMENTO 112023.pdf"
+15-12-2023 16:21:45; DEBUG; process.folhaDePagamento; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:21:47; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:21:48; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:21:48; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:21:48; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:21:48; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "135052" in Sharepoint.
+15-12-2023 16:21:48; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:48; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:49; INFO; functions.sharepointCreateMultipleFolder; The folder "135052" was created succesfully in Sharepoint.
+15-12-2023 16:21:49; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:21:49; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:49; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:49; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:21:49; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:21:49; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:49; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:49; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:21:49; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "SP" in Sharepoint.
+15-12-2023 16:21:49; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:50; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:21:50; INFO; functions.sharepointCreateMultipleFolder; The folder "SP" was created succesfully in Sharepoint.
+15-12-2023 16:21:50; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP" created successfully.
+15-12-2023 16:21:50; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:21:50; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:21:50; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:21:50; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/FOLHA DE PAGAMENTO 112023.pdf" to Sharepoint.
+15-12-2023 16:21:50; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:21:51; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/135052/2023/112023/SP')/Files/add(url='FOLHA%20DE%20PAGAMENTO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:21:51; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP/FOLHA DE PAGAMENTO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:21:51; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP finished! ===
+15-12-2023 16:21:56; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:21:56; INFO; functions.cmatEngenhariaSheetData; CMAT ENGENHARIA full dict list: [{'col1': '02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}, {'col1': '02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:21:56; INFO; process.reciboPagamento; Current Contrato: 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP - 1/2
+15-12-2023 16:21:56; INFO; process.reciboPagamento; "Contrato" number only: 135052
+15-12-2023 16:21:56; INFO; process.reciboPagamento; "Filial" only: SP
+15-12-2023 16:21:56; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP started! ===
+15-12-2023 16:21:56; INFO; process.reciboPagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP" created.
+15-12-2023 16:21:58; DEBUG; process.reciboPagamento; "Operacionais" button pressed.
+15-12-2023 16:21:59; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:22:01; DEBUG; process.reciboPagamento; "Recibo de Pagamento" screen found.
+15-12-2023 16:22:01; DEBUG; process.reciboPagamento; "Impressora" button pressed.
+15-12-2023 16:22:02; DEBUG; process.reciboPagamento; "Gráfico" button pressed.
+15-12-2023 16:22:03; DEBUG; process.reciboPagamento; "Coletivo" button pressed.
+15-12-2023 16:22:03; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:22:03; DEBUG; process.reciboPagamento; "Parâmetros" button pressed.
+15-12-2023 16:22:04; DEBUG; process.reciboPagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:22:05; DEBUG; process.reciboPagamento; "50 - TOT RESC 1" deselected.
+15-12-2023 16:22:10; DEBUG; process.reciboPagamento; "60 - TOT RESC 2" deselected.
+15-12-2023 16:22:11; DEBUG; process.reciboPagamento; Scrolled up the bar.
+15-12-2023 16:22:13; DEBUG; process.reciboPagamento; "05 - RESCISÃO" deselected.
+15-12-2023 16:22:13; DEBUG; process.reciboPagamento; "07 - COMP DO MÊS" deselected.
+15-12-2023 16:22:14; DEBUG; process.reciboPagamento; "08 - COMP FORA DO MÊS" deselected.
+15-12-2023 16:22:14; DEBUG; process.reciboPagamento; "01 - MENSAL" deselected.
+15-12-2023 16:22:17; DEBUG; process.reciboPagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:22:18; DEBUG; process.reciboPagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:22:19; DEBUG; process.reciboPagamento; Clicked on "Fechar" button.
+15-12-2023 16:22:20; DEBUG; process.reciboPagamento; Clicked on "Emitir" button.
+15-12-2023 16:22:23; DEBUG; process.reciboPagamento; Screen for saving PDF found.
+15-12-2023 16:22:27; DEBUG; process.reciboPagamento; File name field clean.
+15-12-2023 16:22:28; INFO; process.reciboPagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\135052\2023\112023\SP\RECIBO DE PAGAMENTO 112023.pdf" written on name field.
+15-12-2023 16:22:32; INFO; process.reciboPagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/RECIBO DE PAGAMENTO 112023.pdf"
+15-12-2023 16:22:32; DEBUG; process.reciboPagamento; ENTER key pressed.
+15-12-2023 16:22:46; DEBUG; process.reciboPagamento; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:22:47; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:22:48; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:22:49; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:22:49; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:22:49; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "135052" in Sharepoint.
+15-12-2023 16:22:49; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:22:49; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:22:49; INFO; functions.sharepointCreateMultipleFolder; The folder "135052" was created succesfully in Sharepoint.
+15-12-2023 16:22:49; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:22:49; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:22:50; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:22:50; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:22:50; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:22:50; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:22:50; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:22:50; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:22:50; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "SP" in Sharepoint.
+15-12-2023 16:22:50; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:22:51; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:22:51; INFO; functions.sharepointCreateMultipleFolder; The folder "SP" was created succesfully in Sharepoint.
+15-12-2023 16:22:51; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP" created successfully.
+15-12-2023 16:22:51; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:22:51; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:22:51; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:22:51; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/RECIBO DE PAGAMENTO 112023.pdf" to Sharepoint.
+15-12-2023 16:22:51; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:22:52; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/135052/2023/112023/SP')/Files/add(url='RECIBO%20DE%20PAGAMENTO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:22:52; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP/RECIBO DE PAGAMENTO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:22:52; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP finished! ===
+15-12-2023 16:22:57; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:22:57; INFO; functions.cmatEngenhariaSheetData; CMAT ENGENHARIA full dict list: [{'col1': '02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}, {'col1': '02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:22:57; INFO; process.gps; Current Contrato: 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP - 1/2
+15-12-2023 16:22:57; INFO; process.gps; "Contrato" number only: 135052
+15-12-2023 16:22:57; INFO; process.gps; "Filial" only: SP
+15-12-2023 16:22:57; INFO; process.gps; === GPS process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP started! ===
+15-12-2023 16:22:57; INFO; process.gps; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP" created.
+15-12-2023 16:22:59; DEBUG; process.gps; "Oficiais" button pressed.
+15-12-2023 16:23:00; DEBUG; process.gps; "INSS - GPS" button pressed.
+15-12-2023 16:23:02; DEBUG; process.gps; "Limpar Relação de Funcionários" button clicked.
+15-12-2023 16:23:02; DEBUG; process.gps; "Impressora" button pressed.
+15-12-2023 16:23:03; DEBUG; process.gps; "Resumo" button pressed.
+15-12-2023 16:23:03; DEBUG; process.gps; "Por Lotação" button pressed.
+15-12-2023 16:23:04; DEBUG; process.gps; "Eventos Calculados" button pressed.
+15-12-2023 16:23:05; DEBUG; process.gps; Clicked on "Data de Referência" field.
+15-12-2023 16:23:07; DEBUG; process.gps; "112023" written in "Data de Referência" field.
+15-12-2023 16:23:08; DEBUG; process.gps; "3 - Projetos" selected.
+15-12-2023 16:23:25; DEBUG; process.gps; "02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP" written on the list.
+15-12-2023 16:23:25; DEBUG; process.gps; "01 - Mensal" button pressed.
+15-12-2023 16:23:26; DEBUG; process.gps; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:23:26; DEBUG; process.gps; Clicked on "Emitir" button.
+15-12-2023 16:23:31; DEBUG; process.gps; Message popup found. Button "Yes" clicked.
+15-12-2023 16:23:35; DEBUG; process.gps; Screen for saving PDF found.
+15-12-2023 16:23:38; DEBUG; process.gps; File name field clean.
+15-12-2023 16:23:40; INFO; process.gps; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\135052\2023\112023\SP\RESUMO GPS 112023.pdf" written on name field.
+15-12-2023 16:23:42; DEBUG; process.gps; ENTER key pressed.
+15-12-2023 16:23:42; INFO; process.gps; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/RESUMO GPS 112023.pdf"
+15-12-2023 16:23:50; DEBUG; process.gps; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:23:52; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:23:53; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:23:53; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:23:53; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:23:53; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "135052" in Sharepoint.
+15-12-2023 16:23:53; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:23:54; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:23:54; INFO; functions.sharepointCreateMultipleFolder; The folder "135052" was created succesfully in Sharepoint.
+15-12-2023 16:23:54; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:23:54; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:23:54; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:23:54; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:23:54; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:23:54; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:23:55; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:23:55; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:23:55; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "SP" in Sharepoint.
+15-12-2023 16:23:55; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:23:55; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:23:55; INFO; functions.sharepointCreateMultipleFolder; The folder "SP" was created succesfully in Sharepoint.
+15-12-2023 16:23:55; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP" created successfully.
+15-12-2023 16:23:55; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:23:55; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:23:55; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:23:55; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/135052/2023/112023/SP/RESUMO GPS 112023.pdf" to Sharepoint.
+15-12-2023 16:23:55; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:23:56; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/135052/2023/112023/SP')/Files/add(url='RESUMO%20GPS%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:23:56; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/135052/2023/112023/SP/RESUMO GPS 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:23:56; INFO; process.gps; === GPS process for SP - 02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP finished! ===
+15-12-2023 16:24:01; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:24:01; INFO; functions.cmatEngenhariaSheetData; CMAT ENGENHARIA full dict list: [{'col1': '02.01.00135052.00 - 02-135052 DESPCC NUC MEIO AMBIENTE TRANSP SP', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}, {'col1': '02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS', 'col2': 150.0, 'col3': 'SP', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:24:01; INFO; process.relfuncs; Current Contrato: 02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS - 2/2
+15-12-2023 16:24:01; INFO; process.relfuncs; "Contrato" number only: 10138510
+15-12-2023 16:24:01; INFO; process.relfuncs; "Filial" only: SP
+15-12-2023 16:24:01; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for SP - 02.01.138510.00 - 02-10138510 NUCLEO DE ESTUDOS E PROJETOS started! ===
+15-12-2023 16:24:03; DEBUG; process.relfuncs; "Funcionários" button clicked.
+15-12-2023 16:24:04; DEBUG; process.relfuncs; "Relação de Funcionários" button clicked.
+15-12-2023 16:24:06; DEBUG; process.relfuncs; "Limpar Relação de Funcionários" button clicked.
+15-12-2023 16:24:07; DEBUG; process.relfuncs; Clicked on "Impressora" option in "Impressão".
+15-12-2023 16:24:08; DEBUG; process.relfuncs; "Parâmetros" button clicked.
+15-12-2023 16:24:09; DEBUG; process.relfuncs; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:24:11; DEBUG; process.relfuncs; "Lista de Lotações" selected in "Selecionar por".
+15-12-2023 16:24:11; DEBUG; process.relfuncs; "3 - PROJETOS" selected in "Agrupar pelo nível" combobox
+15-12-2023 16:24:15; DEBUG; process.relfuncs; "3 - PROJETOS" selected in "Nível" combobox
+15-12-2023 16:25:37; DEBUG; process.relfuncs; "Folhas e Situações" button clicked.
+15-12-2023 16:25:38; DEBUG; process.relfuncs; Scrolled up the bar.
+15-12-2023 16:25:39; DEBUG; process.relfuncs; "01 - MENSAL" selected.
+15-12-2023 16:25:39; DEBUG; process.relfuncs; "05 - RESCISÃO" selected.
+15-12-2023 16:25:40; DEBUG; process.relfuncs; "07 - COMP DO MÊS" selected.
+15-12-2023 16:25:40; DEBUG; process.relfuncs; "08 - COMP FORA DO MÊS" selected.
+15-12-2023 16:25:41; DEBUG; process.relfuncs; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:25:42; DEBUG; process.relfuncs; Scrolled down the bar.
+15-12-2023 16:25:43; DEBUG; process.relfuncs; "50 - TOT RESC 1" selected.
+15-12-2023 16:25:44; DEBUG; process.relfuncs; "60 - TOT RESC 2" selected.
+15-12-2023 16:25:46; DEBUG; process.relfuncs; Clicked on "Data de Referência" field.
+15-12-2023 16:25:48; DEBUG; process.relfuncs; "112023" written in "Data de Referência" field.
+15-12-2023 16:25:48; DEBUG; process.relfuncs; Clicked on "Fechar" button.
+15-12-2023 16:25:53; DEBUG; process.relfuncs; "Parâmetros" screen disappeared.
+15-12-2023 16:25:57; DEBUG; process.relfuncs; Clicked on "Emitir" button.
+15-12-2023 16:26:10; DEBUG; process.relfuncs; "Não há funcionarios que atendam aos parâmetros especificados" popup appeared.
+15-12-2023 16:26:10; DEBUG; process.relfuncs; "OK" button clicked from "Não há funcionarios que atendam aos parâmetros especificados" popup.
+15-12-2023 16:26:20; DEBUG; process.relfuncs; Clicked on "Fechar" button.
+15-12-2023 16:26:20; INFO; main.main; Finished CMAT ENGENHARIA loop.
+
+
+15-12-2023 16:26:20; INFO; main.main; Starting CMAT ENGENHARIA PAULO loop...
+
+
+15-12-2023 16:26:20; INFO; functions.cmatEngenhariaPauloSheetData; CMAT ENGENHARIA - PAULO full dict list: [{'col1': '03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS', 'col2': 'BH', 'col3': 'DP GERAL'}]
+15-12-2023 16:26:20; INFO; functions.cmatEngenhariaPauloSheetData; CMAT ENGENHARIA - PAULO full dict list: [{'col1': '03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS', 'col2': 'BH', 'col3': 'DP GERAL'}]
+15-12-2023 16:26:20; INFO; process.folhaDePagamento; Current Contrato: 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS - 1/1
+15-12-2023 16:26:20; INFO; process.folhaDePagamento; "Contrato" number only: 305099
+15-12-2023 16:26:20; INFO; process.folhaDePagamento; "Filial" only: BH
+15-12-2023 16:26:20; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for BH - 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS started! ===
+15-12-2023 16:26:22; DEBUG; process.folhaDePagamento; "Operacionais" button pressed.
+15-12-2023 16:26:23; DEBUG; process.folhaDePagamento; "Folha de Pagamento" button pressed.
+15-12-2023 16:26:25; DEBUG; process.folhaDePagamento; "Limpar" button pressed.
+15-12-2023 16:26:25; DEBUG; process.folhaDePagamento; "Impressora" button pressed.
+15-12-2023 16:26:25; DEBUG; process.folhaDePagamento; "Centro de Custo" button pressed.
+15-12-2023 16:26:26; DEBUG; process.folhaDePagamento; "Resumo C. Custo" box deselected.
+15-12-2023 16:26:26; DEBUG; process.folhaDePagamento; "Resumo Geral" box deselected.
+15-12-2023 16:26:26; DEBUG; process.folhaDePagamento; "Totalizar Proventos" box selected.
+15-12-2023 16:26:27; DEBUG; process.folhaDePagamento; "Parâmetros" button pressed.
+15-12-2023 16:26:27; DEBUG; process.folhaDePagamento; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:26:30; DEBUG; process.folhaDePagamento; "Lista de Lotações" selected in "Selecionar por".
+15-12-2023 16:26:30; DEBUG; process.folhaDePagamento; "3 - PROJETOS" selected in "Agrupar pelo nível" combobox
+15-12-2023 16:26:34; DEBUG; process.folhaDePagamento; "3 - PROJETOS" selected in "Nível" combobox
+15-12-2023 16:28:32; INFO; process.folhaDePagamento; Contrato 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS selected.
+15-12-2023 16:28:33; DEBUG; process.folhaDePagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:28:34; DEBUG; process.folhaDePagamento; Scrolled up the bar.
+15-12-2023 16:28:35; DEBUG; process.folhaDePagamento; "01 - MENSAL" selected.
+15-12-2023 16:28:35; DEBUG; process.folhaDePagamento; "05 - RESCISÃO" selected.
+15-12-2023 16:28:36; DEBUG; process.folhaDePagamento; "07 - COMP DO MÊS" selected.
+15-12-2023 16:28:36; DEBUG; process.folhaDePagamento; "08 - COMP FORA DO MÊS" selected.
+15-12-2023 16:28:37; DEBUG; process.folhaDePagamento; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:28:39; DEBUG; process.folhaDePagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:28:41; DEBUG; process.folhaDePagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:28:41; DEBUG; process.folhaDePagamento; "Fechar" button pressed.
+15-12-2023 16:28:41; INFO; process.folhaDePagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH" created.
+15-12-2023 16:28:42; DEBUG; process.folhaDePagamento; "Emitir" button pressed.
+15-12-2023 16:29:22; DEBUG; process.folhaDePagamento; Screen for saving PDF found.
+15-12-2023 16:29:25; DEBUG; process.folhaDePagamento; File name field clean.
+15-12-2023 16:29:26; INFO; process.folhaDePagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\305099\2023\112023\BH\305099 MENSAL 112023.pdf" written on name field.
+15-12-2023 16:29:28; DEBUG; process.folhaDePagamento; ENTER key pressed.
+15-12-2023 16:29:29; INFO; process.folhaDePagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH/305099 MENSAL 112023.pdf"
+15-12-2023 16:29:41; DEBUG; process.folhaDePagamento; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:29:42; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:29:43; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:29:44; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:29:44; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:29:44; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "305099" in Sharepoint.
+15-12-2023 16:29:44; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:29:44; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:29:44; INFO; functions.sharepointCreateMultipleFolder; The folder "305099" was created succesfully in Sharepoint.
+15-12-2023 16:29:44; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:29:44; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:29:44; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:29:44; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:29:44; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:29:44; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:29:45; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:29:45; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:29:45; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "BH" in Sharepoint.
+15-12-2023 16:29:45; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:29:45; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:29:45; INFO; functions.sharepointCreateMultipleFolder; The folder "BH" was created succesfully in Sharepoint.
+15-12-2023 16:29:45; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/305099/2023/112023/BH" created successfully.
+15-12-2023 16:29:45; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:29:46; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:29:46; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:29:46; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH/305099 MENSAL 112023.pdf" to Sharepoint.
+15-12-2023 16:29:46; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:29:46; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/MINEIRA%C3%87%C3%83O/305099/2023/112023/BH')/Files/add(url='305099%20MENSAL%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:29:46; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/305099/2023/112023/BH/305099 MENSAL 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:29:46; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for BH - 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS finished! ===
+15-12-2023 16:29:51; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:29:51; INFO; functions.cmatEngenhariaPauloSheetData; CMAT ENGENHARIA - PAULO full dict list: [{'col1': '03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS', 'col2': 'BH', 'col3': 'DP GERAL'}]
+15-12-2023 16:29:51; INFO; process.resumoGeral; Current Contrato: 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS - 1/1
+15-12-2023 16:29:51; INFO; process.resumoGeral; "Contrato" number only: 305099
+15-12-2023 16:29:51; INFO; process.resumoGeral; "Filial" only: BH
+15-12-2023 16:29:51; INFO; process.resumoGeral; === RESUMO GERAL process for BH - 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS started! ===
+15-12-2023 16:29:53; DEBUG; process.resumoGeral; "Operacionais" button pressed.
+15-12-2023 16:29:54; DEBUG; process.resumoGeral; "Folha de Pagamento" button pressed.
+15-12-2023 16:29:56; DEBUG; process.resumoGeral; "Limpar" button pressed.
+15-12-2023 16:29:57; DEBUG; process.resumoGeral; "Impressora" button pressed.
+15-12-2023 16:29:57; DEBUG; process.resumoGeral; "Centro de Custo" button pressed.
+15-12-2023 16:29:58; DEBUG; process.resumoGeral; "Folha" box deselected.
+15-12-2023 16:29:58; DEBUG; process.resumoGeral; "Resumo Centro de Custo" box deselected.
+15-12-2023 16:29:59; DEBUG; process.resumoGeral; "Totalizar Proventos" box selected.
+15-12-2023 16:29:59; DEBUG; process.resumoGeral; "Emitir" button pressed.
+15-12-2023 16:29:59; INFO; process.resumoGeral; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH" created.
+15-12-2023 16:30:04; DEBUG; process.resumoGeral; Screen for saving PDF found.
+15-12-2023 16:30:08; DEBUG; process.resumoGeral; File name field clean.
+15-12-2023 16:30:08; INFO; process.resumoGeral; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\305099\2023\112023\BH\305099 RESUMO 112023.pdf" written on name field.
+15-12-2023 16:30:11; DEBUG; process.resumoGeral; ENTER key pressed.
+15-12-2023 16:30:13; INFO; process.resumoGeral; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH/305099 RESUMO 112023.pdf"
+15-12-2023 16:30:20; DEBUG; process.resumoGeral; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:30:21; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:30:23; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:30:23; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:30:23; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:30:23; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "305099" in Sharepoint.
+15-12-2023 16:30:23; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:30:23; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:30:23; INFO; functions.sharepointCreateMultipleFolder; The folder "305099" was created succesfully in Sharepoint.
+15-12-2023 16:30:23; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:30:23; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:30:24; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:30:24; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:30:24; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:30:24; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:30:24; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:30:24; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:30:24; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "BH" in Sharepoint.
+15-12-2023 16:30:24; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:30:25; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:30:25; INFO; functions.sharepointCreateMultipleFolder; The folder "BH" was created succesfully in Sharepoint.
+15-12-2023 16:30:25; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/305099/2023/112023/BH" created successfully.
+15-12-2023 16:30:25; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:30:25; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:30:25; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:30:25; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH/305099 RESUMO 112023.pdf" to Sharepoint.
+15-12-2023 16:30:25; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:30:26; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/MINEIRA%C3%87%C3%83O/305099/2023/112023/BH')/Files/add(url='305099%20RESUMO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:30:26; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/305099/2023/112023/BH/305099 RESUMO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:30:26; INFO; process.resumoGeral; === RESUMO GERAL process for BH - 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS finished! ===
+15-12-2023 16:30:31; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:30:31; INFO; functions.cmatEngenhariaPauloSheetData; CMAT ENGENHARIA - PAULO full dict list: [{'col1': '03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS', 'col2': 'BH', 'col3': 'DP GERAL'}]
+15-12-2023 16:30:31; INFO; process.reciboPagamento; Current Contrato: 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS - 1/1
+15-12-2023 16:30:31; INFO; process.reciboPagamento; "Contrato" number only: 305099
+15-12-2023 16:30:31; INFO; process.reciboPagamento; "Filial" only: BH
+15-12-2023 16:30:31; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process for BH - 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS started! ===
+15-12-2023 16:30:31; INFO; process.reciboPagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH" created.
+15-12-2023 16:30:33; DEBUG; process.reciboPagamento; "Operacionais" button pressed.
+15-12-2023 16:30:33; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:30:35; DEBUG; process.reciboPagamento; "Recibo de Pagamento" screen found.
+15-12-2023 16:30:36; DEBUG; process.reciboPagamento; "Impressora" button pressed.
+15-12-2023 16:30:37; DEBUG; process.reciboPagamento; "Gráfico" button pressed.
+15-12-2023 16:30:37; DEBUG; process.reciboPagamento; "Coletivo" button pressed.
+15-12-2023 16:30:38; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:30:38; DEBUG; process.reciboPagamento; "Parâmetros" button pressed.
+15-12-2023 16:30:38; DEBUG; process.reciboPagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:30:39; DEBUG; process.reciboPagamento; "05 - RESCISÃO" deselected.
+15-12-2023 16:30:39; DEBUG; process.reciboPagamento; "07 - COMP DO MÊS" deselected.
+15-12-2023 16:30:40; DEBUG; process.reciboPagamento; "08 - COMP FORA DO MÊS" deselected.
+15-12-2023 16:30:40; DEBUG; process.reciboPagamento; "01 - MENSAL" deselected.
+15-12-2023 16:30:42; DEBUG; process.reciboPagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:30:44; DEBUG; process.reciboPagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:30:44; DEBUG; process.reciboPagamento; Clicked on "Fechar" button.
+15-12-2023 16:30:45; DEBUG; process.reciboPagamento; Clicked on "Emitir" button.
+15-12-2023 16:30:49; DEBUG; process.reciboPagamento; Screen for saving PDF found.
+15-12-2023 16:30:51; DEBUG; process.reciboPagamento; File name field clean.
+15-12-2023 16:30:52; INFO; process.reciboPagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\305099\2023\112023\BH\305099 RECIBO 112023.pdf" written on name field.
+15-12-2023 16:30:56; INFO; process.reciboPagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH/305099 RECIBO 112023.pdf"
+15-12-2023 16:30:56; DEBUG; process.reciboPagamento; ENTER key pressed.
+15-12-2023 16:31:11; DEBUG; process.reciboPagamento; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:31:12; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:31:13; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:31:14; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:31:14; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:31:14; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "305099" in Sharepoint.
+15-12-2023 16:31:14; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:31:14; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:31:14; INFO; functions.sharepointCreateMultipleFolder; The folder "305099" was created succesfully in Sharepoint.
+15-12-2023 16:31:14; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:31:14; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:31:15; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:31:15; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:31:15; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:31:15; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:31:15; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:31:15; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:31:15; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "BH" in Sharepoint.
+15-12-2023 16:31:15; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:31:16; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:31:16; INFO; functions.sharepointCreateMultipleFolder; The folder "BH" was created succesfully in Sharepoint.
+15-12-2023 16:31:16; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/305099/2023/112023/BH" created successfully.
+15-12-2023 16:31:16; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:31:16; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:31:16; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:31:16; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/305099/2023/112023/BH/305099 RECIBO 112023.pdf" to Sharepoint.
+15-12-2023 16:31:16; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:31:17; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/MINEIRA%C3%87%C3%83O/305099/2023/112023/BH')/Files/add(url='305099%20RECIBO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:31:17; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/305099/2023/112023/BH/305099 RECIBO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:31:17; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process BH - 03.01.00305099.00 - 03-305099 CONTRATOS ENCERRADOS INDUSTRIAS finished! ===
+15-12-2023 16:31:22; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:31:22; INFO; main.main; Finished CMAT ENGENHARIA PAULO loop.
+
+
+15-12-2023 16:31:22; INFO; main.main; Starting EQUIPES DE MONTAGEM loop...
+
+
+15-12-2023 16:31:22; INFO; functions.equipesDeMontagemSheetData; EQUIPES DE MONTAGEM full dict list: [{'30000582': [157903]}]
+15-12-2023 16:31:22; INFO; functions.equipesDeMontagemSheetData; EQUIPES DE MONTAGEM full dict list: [{'30000582': [157903]}]
+15-12-2023 16:31:22; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for EQUIPE 30000582 - [157903] started! ===
+15-12-2023 16:31:24; DEBUG; process.relfuncs; "Funcionários" button clicked.
+15-12-2023 16:31:25; DEBUG; process.relfuncs; "Relação de Funcionários" button clicked.
+15-12-2023 16:31:27; DEBUG; process.relfuncs; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:31:27; DEBUG; process.relfuncs; Clicked on "Impressora" option in "Impressão".
+15-12-2023 16:31:29; DEBUG; process.relfuncs; "Parâmetros" button pressed.
+15-12-2023 16:31:30; DEBUG; process.relfuncs; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:31:30; DEBUG; process.relfuncs; "Folhas e Situações" button clicked.
+15-12-2023 16:31:31; DEBUG; process.relfuncs; Scrolled up the bar.
+15-12-2023 16:31:32; DEBUG; process.relfuncs; "01 - MENSAL" selected.
+15-12-2023 16:31:32; DEBUG; process.relfuncs; "05 - RESCISÃO" selected.
+15-12-2023 16:31:33; DEBUG; process.relfuncs; "07 - COMP DO MÊS" selected.
+15-12-2023 16:31:33; DEBUG; process.relfuncs; "08 - COMP FORA DO MÊS" selected.
+15-12-2023 16:31:34; DEBUG; process.relfuncs; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:31:35; DEBUG; process.relfuncs; Scrolled down the bar.
+15-12-2023 16:31:36; DEBUG; process.relfuncs; "50 - TOT RESC 1" selected.
+15-12-2023 16:31:37; DEBUG; process.relfuncs; "60 - TOT RESC 2" selected.
+15-12-2023 16:31:39; DEBUG; process.relfuncs; Clicked on "Data de Referência" field.
+15-12-2023 16:31:40; DEBUG; process.relfuncs; "112023" written in "Data de Referência" field.
+15-12-2023 16:31:40; DEBUG; process.relfuncs; "Lista de Lotações" selected in "Selecionar por".
+15-12-2023 16:31:41; DEBUG; process.relfuncs; "Folhas e Situações" button clicked.
+15-12-2023 16:31:43; DEBUG; process.relfuncs; "Seleção individual dos funcionários" checkbox marked.
+15-12-2023 16:31:46; DEBUG; process.relfuncs; "157903" written on ID field.
+15-12-2023 16:31:47; DEBUG; process.relfuncs; Clicked on "Adicionar" button.
+15-12-2023 16:31:48; DEBUG; process.relfuncs; "Fechar" button pressed.
+15-12-2023 16:31:48; INFO; process.relfuncs; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023" created.
+15-12-2023 16:31:49; DEBUG; process.relfuncs; "Emitir" button pressed.
+15-12-2023 16:32:18; DEBUG; process.relfuncs; Screen for saving PDF found.
+15-12-2023 16:32:21; DEBUG; process.relfuncs; File name field clean.
+15-12-2023 16:32:22; INFO; process.relfuncs; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30000582 - EQUIPE\2023\112023\REL FUNCS 30000582.pdf" written on name field.
+15-12-2023 16:32:25; DEBUG; process.relfuncs; ENTER key pressed.
+15-12-2023 16:32:28; DEBUG; process.relfuncs; "Fechar" button clicked in Relação de Funcionários Screen
+15-12-2023 16:32:29; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:32:30; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:32:30; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:32:30; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30000582 - EQUIPE" in Sharepoint.
+15-12-2023 16:32:30; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:32:30; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:32:30; INFO; functions.sharepointCreateMultipleFolder; The folder "30000582 - EQUIPE" was created succesfully in Sharepoint.
+15-12-2023 16:32:30; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:32:30; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:32:31; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:32:31; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:32:31; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:32:31; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:32:31; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:32:31; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:32:31; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30000582 - EQUIPE/2023/112023" created successfully.
+15-12-2023 16:32:31; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:32:32; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:32:32; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:32:32; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023/REL FUNCS 30000582.pdf" to Sharepoint.
+15-12-2023 16:32:32; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:32:32; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30000582%20-%20EQUIPE/2023/112023')/Files/add(url='REL%20FUNCS%2030000582.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:32:32; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30000582 - EQUIPE/2023/112023/REL FUNCS 30000582.pdf" upload to Sharepoint successfully.
+15-12-2023 16:32:32; INFO; process.relfuncs; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023/REL FUNCS 30000582.pdf"
+15-12-2023 16:32:32; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:32:33; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for EQUIPE 30000582 finished! ===
+15-12-2023 16:32:38; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:32:38; INFO; functions.equipesDeMontagemSheetData; EQUIPES DE MONTAGEM full dict list: [{'30000582': [157903]}]
+15-12-2023 16:32:38; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for EQUIPE 30000582 - [157903] started! ===
+15-12-2023 16:32:40; DEBUG; process.folhaDePagamento; "Operacionais" button pressed.
+15-12-2023 16:32:41; DEBUG; process.folhaDePagamento; "Folha de Pagamento" button pressed.
+15-12-2023 16:32:43; DEBUG; process.folhaDePagamento; "Limpar" button pressed.
+15-12-2023 16:32:44; DEBUG; process.folhaDePagamento; "Impressora" button pressed.
+15-12-2023 16:32:44; DEBUG; process.folhaDePagamento; "Centro de Custo" button pressed.
+15-12-2023 16:32:44; DEBUG; process.folhaDePagamento; "Imprime Número de Funcionários por Situação" button pressed.
+15-12-2023 16:32:45; DEBUG; process.folhaDePagamento; "Totalizar Proventos" button pressed.
+15-12-2023 16:32:45; DEBUG; process.folhaDePagamento; "Imprime Diferença / Devolução por Linhas" button pressed.
+15-12-2023 16:32:45; INFO; process.folhaDePagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023" created.
+15-12-2023 16:32:47; DEBUG; process.folhaDePagamento; "Emitir" button pressed.
+15-12-2023 16:32:51; DEBUG; process.folhaDePagamento; Screen for saving PDF found.
+15-12-2023 16:32:54; DEBUG; process.folhaDePagamento; File name field clean.
+15-12-2023 16:32:55; INFO; process.folhaDePagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30000582 - EQUIPE\2023\112023\FOLHA DE PAGAMENTO 30000582.pdf" written on name field.
+15-12-2023 16:32:57; DEBUG; process.folhaDePagamento; ENTER key pressed.
+15-12-2023 16:32:58; INFO; process.folhaDePagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023/FOLHA DE PAGAMENTO 30000582.pdf"
+15-12-2023 16:33:06; DEBUG; process.folhaDePagamento; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:33:07; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:33:08; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:33:09; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:33:09; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:33:09; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30000582 - EQUIPE" in Sharepoint.
+15-12-2023 16:33:09; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:09; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:33:09; INFO; functions.sharepointCreateMultipleFolder; The folder "30000582 - EQUIPE" was created succesfully in Sharepoint.
+15-12-2023 16:33:09; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:33:09; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:09; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:33:09; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:33:09; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:33:09; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:10; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:33:10; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:33:10; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30000582 - EQUIPE/2023/112023" created successfully.
+15-12-2023 16:33:10; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:33:10; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:33:10; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:33:10; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023/FOLHA DE PAGAMENTO 30000582.pdf" to Sharepoint.
+15-12-2023 16:33:10; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:11; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30000582%20-%20EQUIPE/2023/112023')/Files/add(url='FOLHA%20DE%20PAGAMENTO%2030000582.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:33:11; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30000582 - EQUIPE/2023/112023/FOLHA DE PAGAMENTO 30000582.pdf" upload to Sharepoint successfully.
+15-12-2023 16:33:11; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for EQUIPE 30000582 finished! ===
+15-12-2023 16:33:16; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:33:16; INFO; functions.equipesDeMontagemSheetData; EQUIPES DE MONTAGEM full dict list: [{'30000582': [157903]}]
+15-12-2023 16:33:16; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process for EQUIPE 30000582 - [157903] started! ===
+15-12-2023 16:33:16; INFO; process.reciboPagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023" created.
+15-12-2023 16:33:18; DEBUG; process.reciboPagamento; "Operacionais" button pressed.
+15-12-2023 16:33:19; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:33:21; DEBUG; process.reciboPagamento; "Recibo de Pagamento" screen found.
+15-12-2023 16:33:21; DEBUG; process.reciboPagamento; "Impressora" button pressed.
+15-12-2023 16:33:22; DEBUG; process.reciboPagamento; "Gráfico" button pressed.
+15-12-2023 16:33:23; DEBUG; process.reciboPagamento; "Coletivo" button pressed.
+15-12-2023 16:33:23; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:33:23; DEBUG; process.reciboPagamento; "Parâmetros" button pressed.
+15-12-2023 16:33:24; DEBUG; process.reciboPagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:33:25; DEBUG; process.reciboPagamento; "50 - TOT RESC 1" deselected.
+15-12-2023 16:33:26; DEBUG; process.reciboPagamento; "60 - TOT RESC 2" deselected.
+15-12-2023 16:33:27; DEBUG; process.reciboPagamento; Scrolled up the bar.
+15-12-2023 16:33:27; DEBUG; process.reciboPagamento; "05 - RESCISÃO" deselected.
+15-12-2023 16:33:28; DEBUG; process.reciboPagamento; "07 - COMP DO MÊS" deselected.
+15-12-2023 16:33:28; DEBUG; process.reciboPagamento; "08 - COMP FORA DO MÊS" deselected.
+15-12-2023 16:33:29; DEBUG; process.reciboPagamento; "01 - MENSAL" deselected.
+15-12-2023 16:33:30; DEBUG; process.reciboPagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:33:32; DEBUG; process.reciboPagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:33:33; DEBUG; process.reciboPagamento; Clicked on "Fechar" button.
+15-12-2023 16:33:33; DEBUG; process.reciboPagamento; Clicked on "Emitir" button.
+15-12-2023 16:33:37; DEBUG; process.reciboPagamento; Screen for saving PDF found.
+15-12-2023 16:33:40; DEBUG; process.reciboPagamento; File name field clean.
+15-12-2023 16:33:42; INFO; process.reciboPagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30000582 - EQUIPE\2023\112023\RECIBO DE PAGAMENTO 30000582.pdf" written on name field.
+15-12-2023 16:33:46; INFO; process.reciboPagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023/RECIBO DE PAGAMENTO 30000582.pdf"
+15-12-2023 16:33:46; DEBUG; process.reciboPagamento; ENTER key pressed.
+15-12-2023 16:33:52; DEBUG; process.reciboPagamento; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:33:54; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:33:55; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:33:55; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:33:55; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:33:55; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30000582 - EQUIPE" in Sharepoint.
+15-12-2023 16:33:55; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:55; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:33:55; INFO; functions.sharepointCreateMultipleFolder; The folder "30000582 - EQUIPE" was created succesfully in Sharepoint.
+15-12-2023 16:33:55; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:33:55; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:56; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:33:56; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:33:56; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:33:56; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:56; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:33:56; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:33:56; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30000582 - EQUIPE/2023/112023" created successfully.
+15-12-2023 16:33:56; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:33:57; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:33:57; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:33:57; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30000582 - EQUIPE/2023/112023/RECIBO DE PAGAMENTO 30000582.pdf" to Sharepoint.
+15-12-2023 16:33:57; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:33:58; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30000582%20-%20EQUIPE/2023/112023')/Files/add(url='RECIBO%20DE%20PAGAMENTO%2030000582.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:33:58; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30000582 - EQUIPE/2023/112023/RECIBO DE PAGAMENTO 30000582.pdf" upload to Sharepoint successfully.
+15-12-2023 16:33:58; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process for EQUIPE 30000582 - [157903] finished! ===
+15-12-2023 16:34:03; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:34:03; INFO; main.main; Finished EQUIPES DE MONTAGEM loop.
+
+
+15-12-2023 16:34:03; INFO; functions.getPid; List of PIDs to kill: [13944, 9568]
+15-12-2023 16:34:03; INFO; functions.pidKillFinish; Process "FPW" killed.
+15-12-2023 16:34:03; INFO; functions.pidKillFinish; Process "FPW" killed.
+15-12-2023 16:34:03; INFO; process.start; === START process started! ===
+15-12-2023 16:34:06; DEBUG; process.start; FPW program opened.
+15-12-2023 16:34:07; DEBUG; process.start; FPW user code written.
+15-12-2023 16:34:07; DEBUG; process.start; TAB key pressed.
+15-12-2023 16:34:09; DEBUG; process.start; FPW Password written.
+15-12-2023 16:34:09; DEBUG; process.start; OK button clicked.
+15-12-2023 16:34:16; DEBUG; process.start; "065" written on Código Empresa form.
+15-12-2023 16:34:25; DEBUG; process.start; "Emissões" button clicked.
+15-12-2023 16:34:25; INFO; process.start; === START process finished! ===
+15-12-2023 16:34:25; INFO; main.main; Starting CMAT SERVIÇOS loop...
+
+
+15-12-2023 16:34:25; INFO; functions.cmatServicosSheetData; CMAT SERVIÇOS full dict list: [{'col1': '01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN', 'col2': 150, 'col3': 'RJ', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:34:25; INFO; functions.cmatServicosSheetData; CMAT SERVIÇOS full dict list: [{'col1': '01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN', 'col2': 150, 'col3': 'RJ', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:34:25; INFO; process.relfuncs; Current Contrato: 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN - 1/1
+15-12-2023 16:34:25; INFO; process.relfuncs; "Contrato" number only: 30001255
+15-12-2023 16:34:25; INFO; process.relfuncs; "Filial" only: RJ
+15-12-2023 16:34:25; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN started! ===
+15-12-2023 16:34:28; DEBUG; process.relfuncs; "Funcionários" button clicked.
+15-12-2023 16:34:29; DEBUG; process.relfuncs; "Relação de Funcionários" button clicked.
+15-12-2023 16:34:31; DEBUG; process.relfuncs; "Limpar Relação de Funcionários" button clicked.
+15-12-2023 16:34:32; DEBUG; process.relfuncs; Clicked on "Impressora" option in "Impressão".
+15-12-2023 16:34:32; DEBUG; process.relfuncs; "Parâmetros" button clicked.
+15-12-2023 16:34:34; DEBUG; process.relfuncs; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:34:36; DEBUG; process.relfuncs; "Lista de Lotações" selected in "Selecionar por".
+15-12-2023 16:34:37; DEBUG; process.relfuncs; "3 - PROJETO" selected in "Agrupar pelo nível" combobox
+15-12-2023 16:34:37; DEBUG; process.relfuncs; "3 - PROJETO" selected in "Nível" combobox
+15-12-2023 16:34:46; DEBUG; process.relfuncs; "Folhas e Situações" button clicked.
+15-12-2023 16:34:47; DEBUG; process.relfuncs; Scrolled up the bar.
+15-12-2023 16:34:48; DEBUG; process.relfuncs; "01 - MENSAL" selected.
+15-12-2023 16:34:48; DEBUG; process.relfuncs; "05 - RESCISÃO" selected.
+15-12-2023 16:34:49; DEBUG; process.relfuncs; "07 - COMP DO MÊS" selected.
+15-12-2023 16:34:49; DEBUG; process.relfuncs; "08 - COMP FORA DO MÊS" selected.
+15-12-2023 16:34:50; DEBUG; process.relfuncs; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:34:51; DEBUG; process.relfuncs; Scrolled down the bar.
+15-12-2023 16:34:52; DEBUG; process.relfuncs; "50 - TOT RESC 1" selected.
+15-12-2023 16:34:53; DEBUG; process.relfuncs; "60 - TOT RESC 2" selected.
+15-12-2023 16:34:55; DEBUG; process.relfuncs; Clicked on "Data de Referência" field.
+15-12-2023 16:34:57; DEBUG; process.relfuncs; "112023" written in "Data de Referência" field.
+15-12-2023 16:34:57; DEBUG; process.relfuncs; Clicked on "Fechar" button.
+15-12-2023 16:35:02; DEBUG; process.relfuncs; "Parâmetros" screen disappeared.
+15-12-2023 16:35:06; DEBUG; process.relfuncs; Clicked on "Emitir" button.
+15-12-2023 16:35:37; DEBUG; process.relfuncs; Screen for saving PDF found.
+15-12-2023 16:35:37; INFO; process.relfuncs; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ" created.
+15-12-2023 16:35:41; DEBUG; process.relfuncs; File name field clean.
+15-12-2023 16:35:42; INFO; process.relfuncs; "C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001255\2023\112023\RJ\REL FUNCS 112023.pdf" written on name field.
+15-12-2023 16:35:45; DEBUG; process.relfuncs; ENTER key pressed.
+15-12-2023 16:35:50; DEBUG; process.relfuncs; "Fechar" button clicked in Relação de Funcionários Screen
+15-12-2023 16:35:51; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:35:52; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:35:52; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:35:52; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001255" in Sharepoint.
+15-12-2023 16:35:52; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:35:52; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:35:52; INFO; functions.sharepointCreateMultipleFolder; The folder "30001255" was created succesfully in Sharepoint.
+15-12-2023 16:35:52; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:35:52; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:35:53; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:35:53; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:35:53; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:35:53; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:35:53; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:35:53; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:35:53; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:35:53; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:35:53; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:35:53; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:35:53; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ" created successfully.
+15-12-2023 16:35:53; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:35:54; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:35:54; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:35:54; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/REL FUNCS 112023.pdf" to Sharepoint.
+15-12-2023 16:35:54; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:35:54; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30001255/2023/112023/RJ')/Files/add(url='REL%20FUNCS%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:35:54; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ/REL FUNCS 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:35:54; INFO; process.relfuncs; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/REL FUNCS 112023.pdf"
+15-12-2023 16:35:54; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:35:55; INFO; process.relfuncs; === RELAÇÃO DE FUNCIONÁRIOS process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN finished! ===
+15-12-2023 16:36:00; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:36:00; INFO; functions.cmatServicosSheetData; CMAT SERVIÇOS full dict list: [{'col1': '01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN', 'col2': 150, 'col3': 'RJ', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:36:00; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN started! ===
+15-12-2023 16:36:00; INFO; process.folhaDePagamento; Current Contrato: 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN - 1/1
+15-12-2023 16:36:00; INFO; process.folhaDePagamento; "Contrato" number only: 30001255
+15-12-2023 16:36:00; INFO; process.folhaDePagamento; "Filial" only: RJ
+15-12-2023 16:36:02; DEBUG; process.folhaDePagamento; "Operacionais" button pressed.
+15-12-2023 16:36:03; DEBUG; process.folhaDePagamento; "Folha de Pagamento" button pressed.
+15-12-2023 16:36:05; DEBUG; process.folhaDePagamento; "Limpar" button pressed.
+15-12-2023 16:36:06; DEBUG; process.folhaDePagamento; "Impressora" button pressed.
+15-12-2023 16:36:06; DEBUG; process.folhaDePagamento; "Centro de Custo" button pressed.
+15-12-2023 16:36:06; DEBUG; process.folhaDePagamento; "Imprime Número de Funcionários por Situação" button pressed.
+15-12-2023 16:36:07; DEBUG; process.folhaDePagamento; "Totalizar Proventos" button pressed.
+15-12-2023 16:36:07; DEBUG; process.folhaDePagamento; "Imprime Diferença / Devolução por Linhas" button pressed.
+15-12-2023 16:36:08; DEBUG; process.folhaDePagamento; "Emitir" button pressed.
+15-12-2023 16:36:08; INFO; process.folhaDePagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ" created.
+15-12-2023 16:36:13; DEBUG; process.folhaDePagamento; Screen for saving PDF found.
+15-12-2023 16:36:16; DEBUG; process.folhaDePagamento; File name field clean.
+15-12-2023 16:36:18; INFO; process.folhaDePagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001255\2023\112023\RJ\FOLHA DE PAGAMENTO 112023.pdf" written on name field.
+15-12-2023 16:36:19; DEBUG; process.folhaDePagamento; ENTER key pressed.
+15-12-2023 16:36:19; INFO; process.folhaDePagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/FOLHA DE PAGAMENTO 112023.pdf"
+15-12-2023 16:36:32; DEBUG; process.folhaDePagamento; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:36:33; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:36:34; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:36:34; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:36:34; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:36:34; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001255" in Sharepoint.
+15-12-2023 16:36:34; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:36:35; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:36:35; INFO; functions.sharepointCreateMultipleFolder; The folder "30001255" was created succesfully in Sharepoint.
+15-12-2023 16:36:35; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:36:35; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:36:35; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:36:35; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:36:35; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:36:35; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:36:36; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:36:36; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:36:36; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:36:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:36:36; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:36:36; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:36:36; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ" created successfully.
+15-12-2023 16:36:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:36:36; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:36:36; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:36:37; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/FOLHA DE PAGAMENTO 112023.pdf" to Sharepoint.
+15-12-2023 16:36:37; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:36:37; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30001255/2023/112023/RJ')/Files/add(url='FOLHA%20DE%20PAGAMENTO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:36:37; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ/FOLHA DE PAGAMENTO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:36:37; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN finished! ===
+15-12-2023 16:36:42; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:36:42; INFO; functions.cmatServicosSheetData; CMAT SERVIÇOS full dict list: [{'col1': '01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN', 'col2': 150, 'col3': 'RJ', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:36:42; INFO; process.reciboPagamento; Current Contrato: 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN - 1/1
+15-12-2023 16:36:42; INFO; process.reciboPagamento; "Contrato" number only: 30001255
+15-12-2023 16:36:42; INFO; process.reciboPagamento; "Filial" only: RJ
+15-12-2023 16:36:42; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN started! ===
+15-12-2023 16:36:42; INFO; process.reciboPagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ" created.
+15-12-2023 16:36:45; DEBUG; process.reciboPagamento; "Operacionais" button pressed.
+15-12-2023 16:36:45; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:36:47; DEBUG; process.reciboPagamento; "Recibo de Pagamento" screen found.
+15-12-2023 16:36:48; DEBUG; process.reciboPagamento; "Impressora" button pressed.
+15-12-2023 16:36:49; DEBUG; process.reciboPagamento; "Gráfico" button pressed.
+15-12-2023 16:36:49; DEBUG; process.reciboPagamento; "Coletivo" button pressed.
+15-12-2023 16:36:50; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:36:50; DEBUG; process.reciboPagamento; "Parâmetros" button pressed.
+15-12-2023 16:36:50; DEBUG; process.reciboPagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:36:51; DEBUG; process.reciboPagamento; "50 - TOT RESC 1" deselected.
+15-12-2023 16:36:52; DEBUG; process.reciboPagamento; "60 - TOT RESC 2" deselected.
+15-12-2023 16:36:53; DEBUG; process.reciboPagamento; Scrolled up the bar.
+15-12-2023 16:36:54; DEBUG; process.reciboPagamento; "05 - RESCISÃO" deselected.
+15-12-2023 16:36:54; DEBUG; process.reciboPagamento; "07 - COMP DO MÊS" deselected.
+15-12-2023 16:36:55; DEBUG; process.reciboPagamento; "08 - COMP FORA DO MÊS" deselected.
+15-12-2023 16:36:55; DEBUG; process.reciboPagamento; "01 - MENSAL" deselected.
+15-12-2023 16:36:57; DEBUG; process.reciboPagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:36:59; DEBUG; process.reciboPagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:36:59; DEBUG; process.reciboPagamento; Clicked on "Fechar" button.
+15-12-2023 16:37:00; DEBUG; process.reciboPagamento; Clicked on "Emitir" button.
+15-12-2023 16:37:03; DEBUG; process.reciboPagamento; Screen for saving PDF found.
+15-12-2023 16:37:06; DEBUG; process.reciboPagamento; File name field clean.
+15-12-2023 16:37:07; INFO; process.reciboPagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001255\2023\112023\RJ\RECIBO DE PAGAMENTO 112023.pdf" written on name field.
+15-12-2023 16:37:11; INFO; process.reciboPagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/RECIBO DE PAGAMENTO 112023.pdf"
+15-12-2023 16:37:11; DEBUG; process.reciboPagamento; ENTER key pressed.
+15-12-2023 16:37:17; DEBUG; process.reciboPagamento; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:37:19; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:37:20; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:37:20; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:37:20; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:37:20; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001255" in Sharepoint.
+15-12-2023 16:37:20; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:37:21; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:37:21; INFO; functions.sharepointCreateMultipleFolder; The folder "30001255" was created succesfully in Sharepoint.
+15-12-2023 16:37:21; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:37:21; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:37:21; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:37:21; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:37:21; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:37:21; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:37:22; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:37:22; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:37:22; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:37:22; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:37:22; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:37:22; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:37:22; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ" created successfully.
+15-12-2023 16:37:22; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:37:22; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:37:22; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:37:22; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/RECIBO DE PAGAMENTO 112023.pdf" to Sharepoint.
+15-12-2023 16:37:22; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:37:23; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30001255/2023/112023/RJ')/Files/add(url='RECIBO%20DE%20PAGAMENTO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:37:23; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ/RECIBO DE PAGAMENTO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:37:23; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN finished! ===
+15-12-2023 16:37:28; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:37:28; INFO; functions.cmatServicosSheetData; CMAT SERVIÇOS full dict list: [{'col1': '01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN', 'col2': 150, 'col3': 'RJ', 'col4': 'UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP'}]
+15-12-2023 16:37:28; INFO; process.gps; Current Contrato: 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN - 1/1
+15-12-2023 16:37:28; INFO; process.gps; "Contrato" number only: 30001255
+15-12-2023 16:37:28; INFO; process.gps; "Filial" only: RJ
+15-12-2023 16:37:28; INFO; process.gps; === GPS process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN started! ===
+15-12-2023 16:37:28; INFO; process.gps; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ" created.
+15-12-2023 16:37:31; DEBUG; process.gps; "Oficiais" button pressed.
+15-12-2023 16:37:31; DEBUG; process.gps; "INSS - GPS" button pressed.
+15-12-2023 16:37:34; DEBUG; process.gps; "Limpar Relação de Funcionários" button clicked.
+15-12-2023 16:37:34; DEBUG; process.gps; "Impressora" button pressed.
+15-12-2023 16:37:34; DEBUG; process.gps; "Resumo" button pressed.
+15-12-2023 16:37:35; DEBUG; process.gps; "Por Lotação" button pressed.
+15-12-2023 16:37:35; DEBUG; process.gps; "Eventos Calculados" button pressed.
+15-12-2023 16:37:37; DEBUG; process.gps; Clicked on "Data de Referência" field.
+15-12-2023 16:37:38; DEBUG; process.gps; "112023" written in "Data de Referência" field.
+15-12-2023 16:37:39; DEBUG; process.gps; "3 - Projetos" selected.
+15-12-2023 16:37:47; DEBUG; process.gps; "01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN" written on the list.
+15-12-2023 16:37:48; DEBUG; process.gps; "01 - Mensal" button pressed.
+15-12-2023 16:37:48; DEBUG; process.gps; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:37:49; DEBUG; process.gps; Clicked on "Emitir" button.
+15-12-2023 16:37:52; DEBUG; process.gps; Message popup found. Button "Yes" clicked.
+15-12-2023 16:37:56; DEBUG; process.gps; Screen for saving PDF found.
+15-12-2023 16:38:00; DEBUG; process.gps; File name field clean.
+15-12-2023 16:38:00; INFO; process.gps; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001255\2023\112023\RJ\RESUMO GPS 112023.pdf" written on name field.
+15-12-2023 16:38:03; DEBUG; process.gps; ENTER key pressed.
+15-12-2023 16:38:03; INFO; process.gps; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/RESUMO GPS 112023.pdf"
+15-12-2023 16:38:10; DEBUG; process.gps; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:38:12; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:38:13; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:38:13; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:38:13; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:38:13; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001255" in Sharepoint.
+15-12-2023 16:38:13; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:38:14; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:38:14; INFO; functions.sharepointCreateMultipleFolder; The folder "30001255" was created succesfully in Sharepoint.
+15-12-2023 16:38:14; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:38:14; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:38:14; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:38:14; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:38:14; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:38:14; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:38:15; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:38:15; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:38:15; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:38:15; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:38:15; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:38:15; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:38:15; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ" created successfully.
+15-12-2023 16:38:15; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:38:16; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:38:16; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:38:16; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001255/2023/112023/RJ/RESUMO GPS 112023.pdf" to Sharepoint.
+15-12-2023 16:38:16; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:38:16; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/30001255/2023/112023/RJ')/Files/add(url='RESUMO%20GPS%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:38:16; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/30001255/2023/112023/RJ/RESUMO GPS 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:38:16; INFO; process.gps; === GPS process for RJ - 01.01.30001255.00 - 01-30001255 VALE - GERENCIAMENTO RAD BRUMADIN finished! ===
+15-12-2023 16:38:21; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:38:21; INFO; main.main; Finished CMAT SERVIÇOS loop.
+
+
+15-12-2023 16:38:21; INFO; main.main; Starting CMAT SERVIÇOS PAULO loop...
+
+
+15-12-2023 16:38:21; INFO; functions.cmatServicosPauloSheetData; CMAT SERVIÇOS - PAULO full dict list: [{'col1': '01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG', 'col2': 'RJ', 'col3': 'DP GERAL'}]
+15-12-2023 16:38:21; INFO; functions.cmatServicosPauloSheetData; CMAT SERVIÇOS - PAULO full dict list: [{'col1': '01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG', 'col2': 'RJ', 'col3': 'DP GERAL'}]
+15-12-2023 16:38:21; INFO; process.folhaDePagamento; Current Contrato: 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG - 1/1
+15-12-2023 16:38:21; INFO; process.folhaDePagamento; "Contrato" number only: 30001168
+15-12-2023 16:38:21; INFO; process.folhaDePagamento; "Filial" only: RJ
+15-12-2023 16:38:21; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for RJ - 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG started! ===
+15-12-2023 16:38:23; DEBUG; process.folhaDePagamento; "Operacionais" button pressed.
+15-12-2023 16:38:24; DEBUG; process.folhaDePagamento; "Folha de Pagamento" button pressed.
+15-12-2023 16:38:26; DEBUG; process.folhaDePagamento; "Limpar" button pressed.
+15-12-2023 16:38:27; DEBUG; process.folhaDePagamento; "Impressora" button pressed.
+15-12-2023 16:38:27; DEBUG; process.folhaDePagamento; "Centro de Custo" button pressed.
+15-12-2023 16:38:27; DEBUG; process.folhaDePagamento; "Resumo C. Custo" box deselected.
+15-12-2023 16:38:28; DEBUG; process.folhaDePagamento; "Resumo Geral" box deselected.
+15-12-2023 16:38:28; DEBUG; process.folhaDePagamento; "Totalizar Proventos" box selected.
+15-12-2023 16:38:29; DEBUG; process.folhaDePagamento; "Parâmetros" button pressed.
+15-12-2023 16:38:29; DEBUG; process.folhaDePagamento; "Limpar Parâmetros de Seleção" button clicked.
+15-12-2023 16:38:31; DEBUG; process.folhaDePagamento; "Lista de Lotações" selected in "Selecionar por".
+15-12-2023 16:38:32; DEBUG; process.folhaDePagamento; "3 - PROJETO" selected in "Agrupar pelo nível" combobox
+15-12-2023 16:38:33; DEBUG; process.folhaDePagamento; "3 - PROJETO" selected in "Nível" combobox
+15-12-2023 16:38:41; INFO; process.folhaDePagamento; Contrato 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG selected.
+15-12-2023 16:38:42; DEBUG; process.folhaDePagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:38:43; DEBUG; process.folhaDePagamento; Scrolled up the bar.
+15-12-2023 16:38:44; DEBUG; process.folhaDePagamento; "01 - MENSAL" selected.
+15-12-2023 16:38:44; DEBUG; process.folhaDePagamento; "05 - RESCISÃO" selected.
+15-12-2023 16:38:45; DEBUG; process.folhaDePagamento; "07 - COMP DO MÊS" selected.
+15-12-2023 16:38:45; DEBUG; process.folhaDePagamento; "08 - COMP FORA DO MÊS" selected.
+15-12-2023 16:38:46; DEBUG; process.folhaDePagamento; "03 - ADIANTAMENTO 13 SALÁRIO" selected.
+15-12-2023 16:38:48; DEBUG; process.folhaDePagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:38:49; DEBUG; process.folhaDePagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:38:50; DEBUG; process.folhaDePagamento; "Fechar" button pressed.
+15-12-2023 16:38:50; INFO; process.folhaDePagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ" created.
+15-12-2023 16:38:51; DEBUG; process.folhaDePagamento; "Emitir" button pressed.
+15-12-2023 16:38:56; DEBUG; process.folhaDePagamento; Screen for saving PDF found.
+15-12-2023 16:38:59; DEBUG; process.folhaDePagamento; File name field clean.
+15-12-2023 16:39:00; INFO; process.folhaDePagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001168\2023\112023\RJ\30001168 MENSAL 112023.pdf" written on name field.
+15-12-2023 16:39:03; DEBUG; process.folhaDePagamento; ENTER key pressed.
+15-12-2023 16:39:04; INFO; process.folhaDePagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ/30001168 MENSAL 112023.pdf"
+15-12-2023 16:40:08; DEBUG; process.folhaDePagamento; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:40:09; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:40:10; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:40:10; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:40:10; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:40:10; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001168" in Sharepoint.
+15-12-2023 16:40:10; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:40:11; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:40:11; INFO; functions.sharepointCreateMultipleFolder; The folder "30001168" was created succesfully in Sharepoint.
+15-12-2023 16:40:11; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:40:11; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:40:11; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:40:11; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:40:11; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:40:11; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:40:12; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:40:12; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:40:12; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:40:12; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:40:12; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:40:12; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:40:12; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/30001168/2023/112023/RJ" created successfully.
+15-12-2023 16:40:12; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:40:12; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:40:12; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:40:12; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ/30001168 MENSAL 112023.pdf" to Sharepoint.
+15-12-2023 16:40:12; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:40:14; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/MINEIRA%C3%87%C3%83O/30001168/2023/112023/RJ')/Files/add(url='30001168%20MENSAL%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:40:14; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/30001168/2023/112023/RJ/30001168 MENSAL 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:40:14; INFO; process.folhaDePagamento; === FOLHA DE PAGAMENTO process for RJ - 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG finished! ===
+15-12-2023 16:40:19; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:40:19; INFO; functions.cmatServicosPauloSheetData; CMAT SERVIÇOS - PAULO full dict list: [{'col1': '01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG', 'col2': 'RJ', 'col3': 'DP GERAL'}]
+15-12-2023 16:40:19; INFO; process.resumoGeral; Current Contrato: 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG - 1/1
+15-12-2023 16:40:19; INFO; process.resumoGeral; "Contrato" number only: 30001168
+15-12-2023 16:40:19; INFO; process.resumoGeral; "Filial" only: RJ
+15-12-2023 16:40:19; INFO; process.resumoGeral; === RESUMO GERAL process for RJ - 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG started! ===
+15-12-2023 16:40:21; DEBUG; process.resumoGeral; "Operacionais" button pressed.
+15-12-2023 16:40:22; DEBUG; process.resumoGeral; "Folha de Pagamento" button pressed.
+15-12-2023 16:40:24; DEBUG; process.resumoGeral; "Limpar" button pressed.
+15-12-2023 16:40:24; DEBUG; process.resumoGeral; "Impressora" button pressed.
+15-12-2023 16:40:24; DEBUG; process.resumoGeral; "Centro de Custo" button pressed.
+15-12-2023 16:40:24; DEBUG; process.resumoGeral; "Folha" box deselected.
+15-12-2023 16:40:25; DEBUG; process.resumoGeral; "Resumo Centro de Custo" box deselected.
+15-12-2023 16:40:25; DEBUG; process.resumoGeral; "Totalizar Proventos" box selected.
+15-12-2023 16:40:26; DEBUG; process.resumoGeral; "Emitir" button pressed.
+15-12-2023 16:40:26; INFO; process.resumoGeral; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ" created.
+15-12-2023 16:40:32; DEBUG; process.resumoGeral; Screen for saving PDF found.
+15-12-2023 16:40:35; DEBUG; process.resumoGeral; File name field clean.
+15-12-2023 16:40:36; INFO; process.resumoGeral; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001168\2023\112023\RJ\30001168 RESUMO 112023.pdf" written on name field.
+15-12-2023 16:40:38; DEBUG; process.resumoGeral; ENTER key pressed.
+15-12-2023 16:40:39; INFO; process.resumoGeral; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ/30001168 RESUMO 112023.pdf"
+15-12-2023 16:41:32; DEBUG; process.resumoGeral; "Fechar" button clicked in Folha de Pagamento Screen
+15-12-2023 16:41:34; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:41:35; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:41:35; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:41:35; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:41:35; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001168" in Sharepoint.
+15-12-2023 16:41:35; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:41:36; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:41:36; INFO; functions.sharepointCreateMultipleFolder; The folder "30001168" was created succesfully in Sharepoint.
+15-12-2023 16:41:36; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:41:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:41:36; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:41:36; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:41:36; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:41:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:41:36; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:41:36; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:41:36; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:41:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:41:37; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:41:37; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:41:37; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/30001168/2023/112023/RJ" created successfully.
+15-12-2023 16:41:37; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:41:37; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:41:37; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:41:37; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ/30001168 RESUMO 112023.pdf" to Sharepoint.
+15-12-2023 16:41:37; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:41:38; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/MINEIRA%C3%87%C3%83O/30001168/2023/112023/RJ')/Files/add(url='30001168%20RESUMO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:41:38; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/30001168/2023/112023/RJ/30001168 RESUMO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:41:38; INFO; process.resumoGeral; === RESUMO GERAL process for RJ - 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG finished! ===
+15-12-2023 16:41:43; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:41:43; INFO; functions.cmatServicosPauloSheetData; CMAT SERVIÇOS - PAULO full dict list: [{'col1': '01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG', 'col2': 'RJ', 'col3': 'DP GERAL'}]
+15-12-2023 16:41:43; INFO; process.reciboPagamento; Current Contrato: 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG - 1/1
+15-12-2023 16:41:43; INFO; process.reciboPagamento; "Contrato" number only: 30001168
+15-12-2023 16:41:43; INFO; process.reciboPagamento; "Filial" only: RJ
+15-12-2023 16:41:43; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process for RJ - 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG started! ===
+15-12-2023 16:41:43; INFO; process.reciboPagamento; Directory "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ" created.
+15-12-2023 16:41:45; DEBUG; process.reciboPagamento; "Operacionais" button pressed.
+15-12-2023 16:41:46; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:41:48; DEBUG; process.reciboPagamento; "Recibo de Pagamento" screen found.
+15-12-2023 16:41:48; DEBUG; process.reciboPagamento; "Impressora" button pressed.
+15-12-2023 16:41:49; DEBUG; process.reciboPagamento; "Gráfico" button pressed.
+15-12-2023 16:41:49; DEBUG; process.reciboPagamento; "Coletivo" button pressed.
+15-12-2023 16:41:50; DEBUG; process.reciboPagamento; "Recibo de Pagamento" button pressed.
+15-12-2023 16:41:50; DEBUG; process.reciboPagamento; "Parâmetros" button pressed.
+15-12-2023 16:41:50; DEBUG; process.reciboPagamento; "Folhas e Situações" button clicked.
+15-12-2023 16:41:51; DEBUG; process.reciboPagamento; "05 - RESCISÃO" deselected.
+15-12-2023 16:41:51; DEBUG; process.reciboPagamento; "07 - COMP DO MÊS" deselected.
+15-12-2023 16:41:52; DEBUG; process.reciboPagamento; "08 - COMP FORA DO MÊS" deselected.
+15-12-2023 16:41:52; DEBUG; process.reciboPagamento; "01 - MENSAL" deselected.
+15-12-2023 16:41:54; DEBUG; process.reciboPagamento; Clicked on "Data de Referência" field.
+15-12-2023 16:41:56; DEBUG; process.reciboPagamento; "112023" written in "Data de Referência" field.
+15-12-2023 16:41:56; DEBUG; process.reciboPagamento; Clicked on "Fechar" button.
+15-12-2023 16:41:57; DEBUG; process.reciboPagamento; Clicked on "Emitir" button.
+15-12-2023 16:42:00; DEBUG; process.reciboPagamento; Screen for saving PDF found.
+15-12-2023 16:42:03; DEBUG; process.reciboPagamento; File name field clean.
+15-12-2023 16:42:04; INFO; process.reciboPagamento; C:\Users\consultor_dclick1\Desktop\projetos\concremat-rpa-procedimento-padrao\pdf\30001168\2023\112023\RJ\30001168 RECIBO 112023.pdf" written on name field.
+15-12-2023 16:42:08; INFO; process.reciboPagamento; Deleted PDF file from "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ/30001168 RECIBO 112023.pdf"
+15-12-2023 16:42:08; DEBUG; process.reciboPagamento; ENTER key pressed.
+15-12-2023 16:42:33; DEBUG; process.reciboPagamento; "Fechar" button clicked in Recibo de Pagamento Screen
+15-12-2023 16:42:35; DEBUG; functions.bringWindow; "Emissões" Window found and brought to front.
+15-12-2023 16:42:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:42:36; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:42:36; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:42:36; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "30001168" in Sharepoint.
+15-12-2023 16:42:36; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:42:37; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:42:37; INFO; functions.sharepointCreateMultipleFolder; The folder "30001168" was created succesfully in Sharepoint.
+15-12-2023 16:42:37; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "2023" in Sharepoint.
+15-12-2023 16:42:37; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:42:37; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:42:37; INFO; functions.sharepointCreateMultipleFolder; The folder "2023" was created succesfully in Sharepoint.
+15-12-2023 16:42:37; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "112023" in Sharepoint.
+15-12-2023 16:42:37; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:42:37; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:42:37; INFO; functions.sharepointCreateMultipleFolder; The folder "112023" was created succesfully in Sharepoint.
+15-12-2023 16:42:37; INFO; functions.sharepointCreateMultipleFolder; Try 1/3 to create the folder "RJ" in Sharepoint.
+15-12-2023 16:42:37; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:42:38; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/web/folders HTTP/1.1" 201 None
+15-12-2023 16:42:38; INFO; functions.sharepointCreateMultipleFolder; The folder "RJ" was created succesfully in Sharepoint.
+15-12-2023 16:42:38; INFO; functions.sharepointCreateMultipleFolder; Directory "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/30001168/2023/112023/RJ" created successfully.
+15-12-2023 16:42:38; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): accounts.accesscontrol.windows.net:443
+15-12-2023 16:42:38; DEBUG; connectionpool._make_request; https://accounts.accesscontrol.windows.net:443 "POST /0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2 HTTP/1.1" 200 1434
+15-12-2023 16:42:38; INFO; functions.sharepointGetBearerToken; Get Bearer Token request successfull.
+15-12-2023 16:42:38; INFO; functions.sharepointSendFile; Try 1/3 to upload "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf/30001168/2023/112023/RJ/30001168 RECIBO 112023.pdf" to Sharepoint.
+15-12-2023 16:42:38; DEBUG; connectionpool._new_conn; Starting new HTTPS connection (1): concrematcorp.sharepoint.com:443
+15-12-2023 16:42:40; DEBUG; connectionpool._make_request; https://concrematcorp.sharepoint.com:443 "POST /teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/MINEIRA%C3%87%C3%83O/30001168/2023/112023/RJ')/Files/add(url='30001168%20RECIBO%20112023.pdf',%20overwrite=true) HTTP/1.1" 200 None
+15-12-2023 16:42:40; INFO; functions.sharepointSendFile; File "https://concrematcorp.sharepoint.com/teams/departamentopessoal/Documentos Compartilhados/DOCUMENTOS MEDIÇÃO (SHAREPOINT)/MINEIRAÇÃO/30001168/2023/112023/RJ/30001168 RECIBO 112023.pdf" upload to Sharepoint successfully.
+15-12-2023 16:42:40; INFO; process.reciboPagamento; === RECIBO DE PAGAMENTO process RJ - 01.01.30001168.00 - 01-30001168 VALE GOIC CORREDOR SUDESTE - MG finished! ===
+15-12-2023 16:42:45; INFO; functions.deletePdfDirectories; All files and directories inside "C:/Users/consultor_dclick1/Desktop/projetos/concremat-rpa-procedimento-padrao/pdf" deleted.
+15-12-2023 16:42:45; INFO; main.main; Finished CMAT SERVIÇOS PAULO loop.
+
+
+15-12-2023 16:42:45; INFO; functions.getPid; List of PIDs to kill: [6640, 10564]
+15-12-2023 16:42:45; INFO; functions.pidKillFinish; Process "FPW" killed.
+15-12-2023 16:42:45; INFO; functions.pidKillFinish; Process "FPW" killed.
+15-12-2023 16:42:45; INFO; functions.logProcessingDuration; All done in 25:12.595 minutes.

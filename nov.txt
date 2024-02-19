@@ -1,0 +1,36 @@
+MINISTÉRIO DO TRABALHO E EMPREGO - MTE MINISTÉRIO DA FAZENDA - MF DATA:04/01/2024
+GFIP - SEFIP 8.40 (23/08/2022) TABELAS 44.0 (25/01/2022) HORA: 14:46:27
+PÁG : 0001/0006
+RELAÇÃO DE TOMADOR/OBRA - RET
+858400001287 378701802400 107684180832 314664800083
+Nº ARQUIVO: IXo2EQ2hRSH0000-4
+EMPRESA:CONCREMAT ENGENHARIA E TECNOLOGIA S A INSCRIÇÃO:33.146.648/0008-04 Nº CONTROLE: JNE71F7mPrn0000-1
+FPAS:507 OUTRAS ENTIDADES:0079 SIMPLES:1 ALIQ RAT: 3,0 FAP: 1,00 RAT AJUSTADO: 3,00 COD REC: 150 COMP: 12/2023
+---------------------------------------------------------------------------------------------------------------------------
+TOMADOR/OBRA : AFLUENTE TRANSMISSAO DE ENERGIA INSCRIÇÃO:10.338.320/0001-00 Nº CONTROLE: HPp2S008Qbu0000-3
+LOGRADOURO BAIRRO CIDADE CEP UF
+PR DO FLAMENGO 1 ANDAR PARTE N 78 FLAMENGO RIO DE JANEIRO 22210030 RJ
+---------------------------------------------------------------------------------------------------------------------------
+MODALIDADE : "Branco"-Recolhimento ao FGTS e Declaração à Previdência
+---------------------------------------------------------------------------------------------------------------------------
+VALORES PREVIDÊNCIA VALORES FGTS - 8%
+REM SEM 13º SALÁRIO 30.403,01 REM SEM 13º SALÁRIO 30.403,01
+REM BASE CALC 13º SAL 37,22 REM 13º SALÁRIO 12.552,43
+DEPÓSITO 3.436,42
+ENCARGOS FGTS 0,00
+CONTRIB SOCIAL 0,00
+ENCARGOS CONTRIB SOC 0,00
+TOTAL TRABALHADORES 5 TOTAL TRABALHADORES 5
+---------------------------------------------------------------------------------------------------------------------------
+TOTAIS DO TOMADOR
+---------------------------------------------------------------------------------------------------------------------------
+VALORES PREVIDÊNCIA VALORES FGTS - 8%
+REM SEM 13º SALÁRIO 30.403,01 REM SEM 13º SALÁRIO 30.403,01
+REM BASE CALC 13º SAL 37,22 REM 13º SALÁRIO 12.552,43
+CONTR SEGURADOS DEVIDA 3.185,57 DEPÓSITO 3.436,42
+VAL DEVIDO PREV SOC 11.952,34 ENCARGOS FGTS 0,00
+CONTRIB SOCIAL 0,00
+ENCARGOS CONTRIB SOC 0,00
+TOTAL TRABALHADORES 5
+TOTAL TRABALHADORES 5
+---------------------------------------------------------------------------------------------------------------------------

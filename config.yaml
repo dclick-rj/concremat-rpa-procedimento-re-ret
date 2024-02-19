@@ -1,0 +1,54 @@
+log:
+  logLevel: 20
+email:
+  login: suporte@dclick.com.br 
+  password: vanxhewjbhhuyoly
+  receiversError: guilherme.buzim@dclick.com.br,ld_log_rpa_dp01@concremat.com.br
+  receiversSuccess: guilherme.buzim@dclick.com.br,ld_log_rpa_dp01@concremat.com.br
+paths:
+  fpwPath: 'C:/Program Files (x86)/LG Informatica/FPw/FPw5.exe'
+  outputPdf: 'ainda nao temos'
+regex:
+  contratos1: (\d+)(?=\s[A-Z])
+  urlTeams: /teams/.*$
+  sharepointFerias: Férias \d{2}.\d{2}.\d{4}
+  contratoPuro: -(\d+)(?=\s|-$)
+  namesRelFuncs: \d{11}\s(.*?)\s\d{2}/\d{2}/\d{4}
+name:
+  csvFile: Dados relatório créditos - Credito Matricula com Centro de Custo_001
+  excelFile: Planilha_modelo_CENTROS DE CUSTOS_DOCUMENTACAO
+  sheet1: CMAT ENGENHARIA
+  sheet2: CMAT SERVIÇOS
+  sheet5: EQUIPES DE MONTAGEM
+  sheetPRCE: Consolidada
+  relFuncs: REL FUNCS
+  ret: R E T
+  re: R E
+  summarizedRelFuncs: REL FUNCS
+  prefixCmatEngenhariaDocument: CMAT
+  prefixCmatServicosDocument: CMAT SERV
+  prefixEquipesDeMontagemDocument: EDM
+sharepoint:
+  clientId: 93854c39-3204-4e14-8f10-47a375519605@0d805f44-3947-4cf4-8bba-48f9b5ea1958
+  clientSecret: B3KGnNUGaMnuakd8KpGc6VlKu1+7QiVJpI+FcurfUX0=
+  resource: 00000003-0000-0ff1-ce00-000000000000/concrematcorp.sharepoint.com@0d805f44-3947-4cf4-8bba-48f9b5ea1958
+  retriesRequest: 3
+  url:
+    GetBearerToken: https://accounts.accesscontrol.windows.net/0d805f44-3947-4cf4-8bba-48f9b5ea1958/tokens/OAuth/2
+    BaseUrl: https://concrematcorp.sharepoint.com/teams/departamentopessoal/_api/Web/GetFileByServerRelativePath(decodedurl='/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/Planilha_modelo_CENTROS%20DE%20CUSTOS_DOCUMENTACAO.xlsx')/$value
+    relatoriosIndividuaisRet: https://concrematcorp.sharepoint.com/teams/departamentopessoal/_api/Web/GetFolderByServerRelativePath(decodedurl='/teams/departamentopessoal/Documentos Compartilhados/FERIAS')/Files
+    relatoriosIndividuaisRetUploadFile: https://concrematcorp.sharepoint.com/teams/departamentopessoal/_api/Web/GetFolderByServerRelativeUrl('/teams/departamentopessoal/Documentos Compartilhados/FERIAS')/Files 
+    GetExcelFile: https://concrematcorp.sharepoint.com/teams/departamentopessoal/_api/Web/GetFileByServerRelativePath(decodedurl='/teams/departamentopessoal/Documentos%20Compartilhados/DOCUMENTOS%20MEDI%C3%87%C3%83O%20(SHAREPOINT)/Planilha_modelo_CENTROS%20DE%20CUSTOS_DOCUMENTACAO.xlsx')/$value
+  folder:
+    names:
+      codEmpresa002: 002 - CONCREMAT
+      codEmpresa065: 065 -TECPAR ENGENHARIA S.A
+      documentoRetornoBancario: DOCUMENTO RETORNO BANCARIO
+un:
+  UN Logística CORP: unlogisticacorp
+  UN Edificações e Saneamento CORP: unedificacoesesaneamentocorp
+  UN Logistica Edificações e Saneamento CORP: unlogisticaedificacoesesaneamentocorp
+  UN ESTUDOS, PROJ. MEIO AMB. E GESTÃO DE INTEGRIDADE DE ATIVOS E O&M CORP: unestudosprojmeioambienteeinspecoescorp
+  UN IND MIN ENERGIA E P&G CORP: unindminpgeenergiacorp
+  UN EPC CORP: unepccorp
+  DP GERAL: dpgeral
