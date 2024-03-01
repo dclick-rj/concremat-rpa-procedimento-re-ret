@@ -5,6 +5,8 @@ email:
   password: vanxhewjbhhuyoly
   receiversError: guilherme.buzim@dclick.com.br,ld_log_rpa_dp01@concremat.com.br
   receiversSuccess: guilherme.buzim@dclick.com.br,ld_log_rpa_dp01@concremat.com.br
+  #receiversError: guilherme.buzim@dclick.com.br,buzimguilherme@gmail.com
+  #receiversSuccess: guilherme.buzim@dclick.com.br,buzimguilherme@gmail.com
 paths:
   fpwPath: 'C:/Program Files (x86)/LG Informatica/FPw/FPw5.exe'
   outputPdf: 'ainda nao temos'

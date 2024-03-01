@@ -125,7 +125,7 @@ def groupIds(df):
 
         #if not pd.isna(valor):  # Verifica se o valor não é NaN
         if not pd.isna(valor) and not any(char.isdigit() for char in valor):
-            logging.debug(f'teste valor nome: {row.iloc[1]}')
+            #logging.debug(f'teste valor nome: {row.iloc[1]}')
             grupo_atual.append(valor)  # Adiciona o valor ao grupo atual
         else:
             if grupo_atual:  # Verifica se o grupo atual não está vazio

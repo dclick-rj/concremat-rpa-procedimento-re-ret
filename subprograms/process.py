@@ -234,7 +234,8 @@ def processCmat(servicos):
         if os.path.exists(f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}') == False:
             os.makedirs(f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}')           
 
-        funcSPdirectory = f'teste/{contratoPuro}/{year}/{month}{year}/{filial}'
+        #funcSPdirectory = f'teste/{contratoPuro}/{year}/{month}{year}/{filial}'
+        funcSPdirectory = f'{contratoPuro}/{year}/{month}{year}/{filial}'
         outputPath = f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}'
         funcSPfileName = f'CMAT_{folderNumber}_RE_{month}{year}.pdf'
 
@@ -254,7 +255,8 @@ def processCmat(servicos):
         
         groupOfPagesRetFile, pdfPath, folderNumber = returnRetFunction
 
-        funcSPdirectory = f'teste/{contratoPuro}/{year}/{month}{year}/{filial}'
+        #funcSPdirectory = f'teste/{contratoPuro}/{year}/{month}{year}/{filial}'
+        funcSPdirectory = f'{contratoPuro}/{year}/{month}{year}/{filial}'
         outputPath = f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}'
         funcSPfileName = f'CMAT_{folderNumber}_RET_{month}{year}.pdf'
 
@@ -470,7 +472,8 @@ def processEquipesDeMontagem():
         if os.path.exists(f'{outputPdfPath}/{contratoPuro} - EQUIPE/{year}/{month}{year}') == False:
             os.makedirs(f'{outputPdfPath}/{contratoPuro} - EQUIPE/{year}/{month}{year}')           
 
-        funcSPdirectory = f'teste/{contratoPuro} - EQUIPE/{year}/{month}{year}'
+        #funcSPdirectory = f'teste/{contratoPuro} - EQUIPE/{year}/{month}{year}'
+        funcSPdirectory = f'{contratoPuro} - EQUIPE/{year}/{month}{year}'
         outputPath = f'{outputPdfPath}/{contratoPuro} - EQUIPE/{year}/{month}{year}'
         funcSPfileName = f'CMAT_{folderNumber}_RE_{month}{year}.pdf'
 
@@ -498,7 +501,8 @@ def processEquipesDeMontagem():
         logging.info(f'RET - resultPagesRet (sem duplicatas): {resultPagesRet}')
 
         
-        funcSPdirectory = f'teste/{contratoPuro} - EQUIPE/{year}/{month}{year}'
+        #funcSPdirectory = f'teste/{contratoPuro} - EQUIPE/{year}/{month}{year}'
+        funcSPdirectory = f'{contratoPuro} - EQUIPE/{year}/{month}{year}'
         outputPath = f'{outputPdfPath}/{contratoPuro} - EQUIPE/{year}/{month}{year}'
         funcSPfileName = f'CMAT_{folderNumber}_RET_{month}{year}.pdf'
 
