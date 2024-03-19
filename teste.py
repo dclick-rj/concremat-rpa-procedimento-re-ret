@@ -161,7 +161,11 @@ def testeExtractRetPages(pdfPath, inscricaoDoTomadorRe):
 
             return []
 
-pdfPath = r'C:/Users/Consultor_dclick2/Desktop/projetos/concremat-rpa-procedimento-re-ret/pdfs/10138510/2023/122023/SP/CMAT_150_RET_122023.pdf'
+'''pdfPath = r'C:/Users/Consultor_dclick2/Desktop/projetos/concremat-rpa-procedimento-re-ret/pdfs/10138510/2023/122023/SP/CMAT_150_RET_122023.pdf'
 inscricaoTomadorRe = '33.146.648/0003-91'
 #testeExtractRetPages(pdfPath, inscricaoDoTomadorRe)
-testeSharepointGetRetDocumentFile(inscricaoTomadorRe=inscricaoTomadorRe, sheetName=sheet1Name)
+testeSharepointGetRetDocumentFile(inscricaoTomadorRe=inscricaoTomadorRe, sheetName=sheet1Name)'''
+
+
+basePath = os.getcwd()
+print(basePath)

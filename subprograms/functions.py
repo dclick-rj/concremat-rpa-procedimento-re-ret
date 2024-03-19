@@ -28,6 +28,18 @@ def emailSuccess():
     logging.info("Success e-mail sent.")
     sys.exit(0)
 
+# ------------------------------------------------------------------------------------
+
+def emailIncompleteProcessing():
+    with open(f'{emailsPath}/emailIncompleteProcessing.html', 'r', encoding='utf=8') as fileSuccess:
+        templateSuccess = fileSuccess.read()
+        htmlSuccess = templateSuccess.format(month=month, year=year)
+    yag.send(to=str(emailReceiversSuccess).split(','), subject=f"PROCESSAMENTO FINALIZADO SEM ENCONTRAR TODOS OS DOCUMENTOS - BOT Procedimento RE e RET",
+    contents=htmlSuccess)#,
+    #attachments=f'{logPath}/{today}/fopag_relatorios_bancarios_{logFileName}.log')
+    logging.info("Incomplete Processing e-mail sent.")
+    sys.exit(0)
+
 
 # ------------------------------------------------------------------------------------
 
@@ -584,7 +596,9 @@ def legacySharepointGetDocumentFile(filial, contratoPuro, personName, documentTy
         # Faz a solicitação GET para obter as pastas
         response = requests.get(url_da_pasta, headers=headers)#, json=dataFolder)
         
-        responseJson = response.json()
+        #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+        if response != None:
+            responseJson = response.json()
         
         logging.warning(f'responseJson inicial aqui: {str(response.text)}')
 
@@ -611,11 +625,14 @@ def legacySharepointGetDocumentFile(filial, contratoPuro, personName, documentTy
                 endpointFile = resultFile['__metadata']['id']
 
                 if document not in endpointFile:
+                    logging.warning(f'Document not in endpoint file')
                     continue
 
                 else:
+                    logging.warning(f'Document in endpoint file')
 
                     response = requests.get(f'{endpointFile}/$value', headers=headers)
+                    logging.warning(f'Response: {response}')
 
                     with open(f'{outputPdfPath}/{personName}.pdf', 'wb') as file:
                         file.write(response.content)
@@ -673,11 +690,14 @@ def legacySharepointGetDocumentFile(filial, contratoPuro, personName, documentTy
                     endpointFile = resultFile['__metadata']['id']
 
                     if document not in endpointFile:
+                        logging.warning(f'Document not in endpoint file')
                         continue
 
                     else:
+                        logging.warning(f'Document in endpoint file')
 
                         response = requests.get(f'{endpointFile}/$value', headers=headers)
+                        logging.warning(f'Response: {response}')
 
                         with open(f'{outputPdfPath}/{personName}.pdf', 'wb') as file:
                             file.write(response.content)
@@ -707,8 +727,9 @@ def legacySharepointGetDocumentFile(filial, contratoPuro, personName, documentTy
 
         # Faz a solicitação GET para obter as pastas
         response = requests.get(url_da_pasta_com_filial, headers=headers, json=dataFolder)
-        
-        responseJson = response.json()
+        #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+        if response != None:
+            responseJson = response.json()
         
         # checa se o resultado de pastas foi vazio, se sim, ele vai procurar o arquivo nessa pasta
         if '{    "d": {        "results": []    }}' in response.text:
@@ -732,11 +753,14 @@ def legacySharepointGetDocumentFile(filial, contratoPuro, personName, documentTy
                 endpointFile = resultFile['__metadata']['id']
 
                 if document not in endpointFile:
+                    logging.warning(f'Document not in endpoint file')
                     continue
 
                 else:
+                    logging.warning(f'Document in endpoint file')
 
                     response = requests.get(f'{endpointFile}/$value', headers=headers)
+                    logging.warning(f'Response: {response}')
 
                     with open(f'{outputPdfPath}/{personName}.pdf', 'wb') as file:
                         file.write(response.content)
@@ -794,11 +818,14 @@ def legacySharepointGetDocumentFile(filial, contratoPuro, personName, documentTy
                     endpointFile = resultFile['__metadata']['id']
 
                     if document not in endpointFile:
+                        logging.warning(f'Document not in endpoint file')
                         continue
 
                     else:
+                        logging.warning(f'Document in endpoint file')
 
                         response = requests.get(f'{endpointFile}/$value', headers=headers)
+                        logging.warning(f'Response: {response}')
 
                         with open(f'{outputPdfPath}/{personName}.pdf', 'wb') as file:
                             file.write(response.content)
@@ -875,12 +902,14 @@ def legacySharepointGetRelFuncsFile(filial, contratoPuro):
 
         # Faz a solicitação GET para obter as pastas
         response = requests.get(url_da_pasta, headers=headers)#, json=dataFolder)
-        
-        responseJson = response.json()
-        
         logging.warning(f'response.text inicial aqui: {str(response.text)}')
+        
+        #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+        if response != None:
+            responseJson = response.json()
+            logging.warning(f'response.json() inicial aqui: {str(response.json())}')
+        
 
-        logging.warning(f'response.json() inicial aqui: {str(response.json())}')
         
         #sys.exit()
 
@@ -893,7 +922,10 @@ def legacySharepointGetRelFuncsFile(filial, contratoPuro):
             url_dos_arquivos = url_da_pasta.replace('Folders', 'Files')
             logging.warning(f'url_dos_arquivos: {url_dos_arquivos}')
             response = requests.get(url_dos_arquivos, headers=headers)
-            responseJson = response.json()
+            
+            #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+            if response != None:
+                responseJson = response.json()
             
             resultsFiles = responseJson['d']['results']
 
@@ -916,11 +948,14 @@ def legacySharepointGetRelFuncsFile(filial, contratoPuro):
                 logging.debug(f'endpointFile: {endpointFile}')
 
                 if document not in endpointFile:
+                    logging.warning(f'Document not in endpoint file')
                     continue
 
                 else:
+                    logging.warning(f'Document in endpoint file')
 
                     response = requests.get(f'{endpointFile}/$value', headers=headers)
+                    logging.warning(f'Response: {response}')
 
                     with open(f'{outputPdfPath}/{contratoPuro}.pdf', 'wb') as file:
                         file.write(response.content)
@@ -1016,7 +1051,9 @@ def legacySharepointGetRelFuncsFile(filial, contratoPuro):
 
 
                 response = requests.get(f'{endpointFile}', headers=headers)
-                responseJson = response.json()
+                #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+                if response != None:
+                    responseJson = response.json()
 
                 logging.warning(f'requisicaoFile: {response.text}')
 
@@ -1042,11 +1079,14 @@ def legacySharepointGetRelFuncsFile(filial, contratoPuro):
                     logging.warning(f'esse aqui {endpointFile}')
 
                     if document not in endpointFile:
+                        logging.warning(f'Document not in endpoint file')
                         continue
 
                     else:
+                        logging.warning(f'Document in endpoint file')
 
                         response = requests.get(f'{endpointFile}/$value', headers=headers)
+                        logging.warning(f'Response: {response}')
 
                         with open(f'{outputPdfPath}/{contratoPuro}.pdf', 'wb') as file:
                             file.write(response.content)
@@ -1257,13 +1297,13 @@ def sharepointGetRelFuncsFile(filial, contratoPuro, edm):
 
         # Faz a solicitação GET para obter as pastas
         response = requests.get(url_da_pasta, headers=headers)#, json=dataFolder)
-        
-        responseJson = response.json()
-        
         logging.warning(f'response.text inicial aqui: {str(response.text)}')
 
-        logging.warning(f'response.json() inicial aqui: {str(response.json())}')
-        
+        #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+        if response != None:
+            responseJson = response.json()
+            logging.warning(f'response.json() inicial aqui: {str(response.json())}')
+
         #sys.exit()
 
         # checa se o resultado de pastas foi vazio, se sim, ele vai procurar o arquivo nessa pasta
@@ -1275,7 +1315,9 @@ def sharepointGetRelFuncsFile(filial, contratoPuro, edm):
             url_dos_arquivos = url_da_pasta.replace('Folders', 'Files')
             logging.warning(f'url_dos_arquivos: {url_dos_arquivos}')
             response = requests.get(url_dos_arquivos, headers=headers)
-            responseJson = response.json()
+            #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+            if response != None:
+                responseJson = response.json()
             
             resultsFiles = responseJson['d']['results']
 
@@ -1298,11 +1340,14 @@ def sharepointGetRelFuncsFile(filial, contratoPuro, edm):
                 logging.debug(f'endpointFile: {endpointFile}')
 
                 if document not in endpointFile:
+                    logging.warning(f'Document not in endpoint file')
                     continue
 
                 else:
+                    logging.warning(f'Document in endpoint file')
 
                     response = requests.get(f'{endpointFile}/$value', headers=headers)
+                    logging.warning(f'Response: {response}')
 
                     with open(f'{outputPdfPath}/{contratoPuro}.pdf', 'wb') as file:
                         file.write(response.content)
@@ -1372,6 +1417,9 @@ def sharepointGetRelFuncsFile(filial, contratoPuro, edm):
                     return f'{outputPdfPath}/{contratoPuro}.pdf'
             '''
 
+            
+
+
             resultFolders = responseJson['d']['results']
 
             #logging.warning('Entrou no else resposta nao vazia')
@@ -1398,7 +1446,9 @@ def sharepointGetRelFuncsFile(filial, contratoPuro, edm):
 
 
                 response = requests.get(f'{endpointFile}', headers=headers)
-                responseJson = response.json()
+                #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+                if response != None:
+                    responseJson = response.json()
 
                 logging.warning(f'requisicaoFile: {response.text}')
 
@@ -1424,11 +1474,14 @@ def sharepointGetRelFuncsFile(filial, contratoPuro, edm):
                     logging.warning(f'esse aqui {endpointFile}')
 
                     if document not in endpointFile:
+                        logging.warning(f'Document not in endpoint file')
                         continue
 
                     else:
+                        logging.warning(f'Document in endpoint file')
 
                         response = requests.get(f'{endpointFile}/$value', headers=headers)
+                        logging.warning(f'Response: {response}')
 
                         with open(f'{outputPdfPath}/{contratoPuro}.pdf', 'wb') as file:
                             file.write(response.content)
@@ -1652,10 +1705,12 @@ def sharepointGetReDocumentFile(personName, sheetName, documentType):
 
             # Faz a solicitação GET para obter as pastas
             response = requests.get(url_da_pasta, headers=headers)#, json=dataFolder)
+            logging.warning(f'response inicial aqui: {str(response.text)}')
             
-            responseJson = response.json()
-            
-            logging.warning(f'responseJson inicial aqui: {str(response.text)}')
+           #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE SER DIFERENTE DE NONE
+            if response != None:
+                responseJson = response.json()
+                logging.warning(f'responseJson inicial aqui: {responseJson}')
 
             # checa se o resultado de pastas foi vazio, se sim, ele vai procurar o arquivo nessa pasta
             #if '{    "d": {        "results": []    }}' in response.text:
@@ -1666,6 +1721,7 @@ def sharepointGetReDocumentFile(personName, sheetName, documentType):
                 return []
             
             else:
+                
 
                 flagNextFolderNumber = False
 
@@ -1686,11 +1742,14 @@ def sharepointGetReDocumentFile(personName, sheetName, documentType):
                     endpointFile = resultFile['__metadata']['id']
 
                     if document not in endpointFile:
+                        logging.warning(f'Document not in endpoint file')
                         continue
 
                     else:
+                        logging.warning(f'Document in endpoint file')
 
                         response = requests.get(f'{endpointFile}/$value', headers=headers)
+                        logging.warning(f'Response: {response}')
 
                         with open(f'{outputPdfPath}/{personName}.pdf', 'wb') as file:
                             file.write(response.content)
@@ -1936,6 +1995,7 @@ def printPdfPages(pdfPath, outputPath, fileName, pagesList):
 
 #def sharepointCreateMultipleFolder(directory, fileDirectory, fileName):
 def sharepointCreateMultipleFolder(directory, fileDirectory, fileName, unParam):
+    logging.debug(f'sharepointCreateMultipleFolder - directory, fileDirectory, fileName, unParam: {directory}, {fileDirectory}, {fileName}, {unParam}')
 
     directorySplit = directory.split('/')
 
@@ -2004,6 +2064,7 @@ def sharepointCreateMultipleFolder(directory, fileDirectory, fileName, unParam):
 
 #def sharepointSendFile(directory, fileDirectory, fileName):
 def sharepointSendFile(directory, fileDirectory, fileName, unParam):
+    logging.debug(f'sharepointSendFile - directory, fileDirectory, fileName, unParam:  {directory}, {fileDirectory}, {fileName}, {unParam}')
 
     token = sharepointGetBearerToken()
 
@@ -2155,9 +2216,10 @@ def sharepointGetRetDocumentFile(inscricaoTomadorRe, sheetName):
             # Faz a solicitação GET para obter as pastas
             response = requests.get(url_da_pasta, headers=headers)#, json=dataFolder)
             
-            responseJson = response.json()
-            
-            logging.warning(f'responseJson inicial aqui: {str(response.text)}')
+            #AJUSTE: A VARIAVEL  "responseJson = response.json()" ESTAVA DEFINIDA SEM A CERTEZA DE NÃO SER NONE
+            if response != None:
+                responseJson = response.json()
+                logging.warning(f'responseJson inicial aqui: {str(response.text)}')
 
             # checa se o resultado de pastas foi vazio, se sim, ele vai procurar o arquivo nessa pasta
             #if '{    "d": {        "results": []    }}' in response.text:
@@ -2188,11 +2250,14 @@ def sharepointGetRetDocumentFile(inscricaoTomadorRe, sheetName):
                     endpointFile = resultFile['__metadata']['id']
 
                     if document not in endpointFile:
+                        logging.warning(f'Document not in endpoint file')
                         continue
 
                     else:
+                        logging.warning(f'Document in endpoint file')
 
                         response = requests.get(f'{endpointFile}/$value', headers=headers)
+                        logging.warning(f'Response: {response}')
 
                         with open(f'{outputPdfPath}/arquivoRET.pdf', 'wb') as file:
                             file.write(response.content)

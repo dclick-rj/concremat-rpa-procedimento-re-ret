@@ -1,126 +1,5 @@
 from subprograms.functions import *
 
-
-def processCmatEngenharia():
-
-    logging.info('Starting CMAT ENGENHARIA process...')
-
-    fullListCmatEngenharia = cmatEngenhariaSheetData()
-
-    for index, lista in enumerate(fullListCmatEngenharia):
-
-        filial = lista['col3']
-        contrato = lista['col1']
-        contratoPuro = re.search(fr'{regexContratoPuro}', contrato).group(1)
-
-        logging.info(f'Currently working on {index+1}° row. ({filial} - {contrato})')
-
-        relFuncsFile = sharepointGetRelFuncsFile(filial, contratoPuro)
-
-        if relFuncsFile == None:
-            logging.warning(f'Could not find Rel Funcs file for "{contratoPuro}" contract.')
-            continue
-        
-  
-        logging.warning(f'FOUND Rel Funcs file for "{contratoPuro}" contract.')
-    
-        namesList = extractRelFuncsPdfNames(pdfPath=relFuncsFile)
-
-        if namesList == []:
-            logging.warning(f'No names were found in "{relFuncsFile}" file.')
-            continue
-
-        logging.info(f'namesList: {namesList}')
-
-
-        #for name in namesList:
-        
-        name = namesList[0]
-
-        
-        logging.info(f'--RE process started for {contratoPuro}--')
-        returnReFunction = sharepointGetReDocumentFile(personName=name, sheetName=sheet1Name, documentType='RE')
-        logging.info(f'returnList: {returnReFunction}')
-        if returnReFunction == []:
-            logging.warning(f'Retornou vazio para "{contratoPuro}".')
-            continue
-        
-        pageNumberFuncionario, pdfPath, folderNumber = returnReFunction
-        
-        logging.info(f'Page wich contains {name} - {pageNumberFuncionario}')
-        logging.info(f'{type(pageNumberFuncionario)} - {pageNumberFuncionario}')
-        if pdfPath == None:
-            continue
-
-        listPageNumberFuncionario = [pageNumberFuncionario]
-
-        inscricaoTomadorRe = extractNumeroInscricaoFromRe(pageNumberFuncionario, pdfPath)
-
-        pagsComNumeroDeInscricaoTomadorRe = pagesWithSameInscricaoTomadorRe(pdfPath=pdfPath, inscricao=inscricaoTomadorRe)
-        logging.info(f'{len(pagsComNumeroDeInscricaoTomadorRe)} pages with same "Inscrição de Tomador"  number were found: {pagsComNumeroDeInscricaoTomadorRe}')
-        if pagsComNumeroDeInscricaoTomadorRe == []:
-            logging.info('Skipping register...')
-            continue
-
-        pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe = pagesWithSameInscricaoFilialRe(pdfPath=pdfPath, inscricao=inscricaoTomadorRe)
-        logging.info(f'{len(pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe)} pages with same "Inscrição de Tomador" + "Resumo do Fechamento - Empresa" number were found: {pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe}')
-        if pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe == []:
-            logging.info('Skipping register...')
-            continue
-
-
-        # Converter as listas para conjuntos
-        conjunct1 = set(listPageNumberFuncionario)
-        conjunct2 = set(pagsComNumeroDeInscricaoTomadorRe)
-        conjunct3 = set(pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe)
-
-        # Unir os conjuntos sem repetir valores
-        unitedConjunct = conjunct1.union(conjunct2, conjunct3)
-        #unitedConjunct = conjunct2.union(conjunct3)
-        # Converter de volta para uma lista
-        pagesListToPrintPdfRe = list(unitedConjunct)
-        pagesListToPrintPdfRe.sort()
-        pagesListToPrintPdfRe.remove(pageNumberFuncionario)
-        pagesListToPrintPdfRe.insert(0, pageNumberFuncionario)
-
-        logging.info(f'RE - pagesListToPrintPdfSortedRe: {pagesListToPrintPdfRe}')
-
-        if os.path.exists(f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}') == False:
-            os.makedirs(f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}')           
-
-        funcSPdirectory = f'{contratoPuro}/{year}/{month}{year}/{filial}'
-        outputPath = f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}'
-        funcSPfileName = f'CMAT_{folderNumber}_RE_{month}{year}.pdf'
-
-        printPdfPages(pdfPath=pdfPath, outputPath=outputPath, fileName=funcSPfileName, pagesList=pagesListToPrintPdfRe)
- 
-        #sharepointCreateFoldersAndUploadFile(directory=funcSPdirectory, fileDirectory=outputPath, fileName=funcSPfileName)
-
-        logging.info(f'--RE process finished for {contratoPuro}--')
-        
-
-        logging.info(f'--RET process started for {contratoPuro}--')
-
-        returnRetFunction = sharepointGetRetDocumentFile(inscricaoTomadorRe=inscricaoTomadorRe, sheetName=sheet1Name)
-        
-        if returnRetFunction == []:
-            logging.warning(f'No RET files were found for "Inscrição do Tomador": {inscricaoTomadorRe}.')
-            continue
-        
-        groupOfPagesRetFile, pdfPath, folderNumber = returnRetFunction
-
-        funcSPdirectory = f'{contratoPuro}/{year}/{month}{year}/{filial}'
-        outputPath = f'{outputPdfPath}/{contratoPuro}/{year}/{month}{year}/{filial}'
-        funcSPfileName = f'CMAT_{folderNumber}_RET_{month}{year}.pdf'
-
-        printPdfPages(pdfPath=pdfPath, outputPath=outputPath, fileName=funcSPfileName, pagesList=groupOfPagesRetFile)
- 
-        #sharepointCreateFoldersAndUploadFile(directory=funcSPdirectory, fileDirectory=outputPath, fileName=funcSPfileName)
-
-        logging.info(f'--RET process finished for {contratoPuro}--')
-
-        #sys.exit()
-
 #----------------------------------------------------------------
 
 
@@ -138,7 +17,13 @@ def processCmat(servicos):
     else:
         fullListCmat = cmatEngenhariaSheetData()
 
+    flagIncompleteProcessingTemp = False
+    flagIncompleteProcessingPerm = False
+
     for index, lista in enumerate(fullListCmat):
+        
+        if flagIncompleteProcessingTemp == True:
+            flagIncompleteProcessingPerm = True
 
         filial = lista['col3']
         contrato = lista['col1']
@@ -155,6 +40,7 @@ def processCmat(servicos):
 
         if relFuncsFile == None:
             logging.warning(f'Could not find Rel Funcs file for "{contratoPuro}" contract.')
+            flagIncompleteProcessingTemp = True
             continue
         
   
@@ -164,6 +50,7 @@ def processCmat(servicos):
 
         if namesList == []:
             logging.warning(f'No names were found in "{relFuncsFile}" file.')
+            flagIncompleteProcessingTemp = True
             continue
 
         logging.info(f'namesList: {namesList}')
@@ -179,6 +66,7 @@ def processCmat(servicos):
         logging.info(f'returnList: {returnReFunction}')
         if returnReFunction == []:
             logging.warning(f'Retornou vazio para "{contratoPuro}". Skipping register...')
+            flagIncompleteProcessingTemp = True
             continue
         
         pageNumberFuncionario, pdfPath, folderNumber = returnReFunction
@@ -187,6 +75,7 @@ def processCmat(servicos):
         logging.info(f'{type(pageNumberFuncionario)} - {pageNumberFuncionario}')
         if pdfPath == None:
             logging.info('Skipping register...')
+            flagIncompleteProcessingTemp = True
             continue
 
         listPageNumberFuncionario = [pageNumberFuncionario]
@@ -194,8 +83,9 @@ def processCmat(servicos):
         inscricoes = extractBothNumeroInscricaoFromRe(pageNumberFuncionario, pdfPath)
         if inscricoes == [] or len(inscricoes) != 2:
             logging.info(f'"inscricoes" not correct: "{inscricoes}". Skipping register...')
+            flagIncompleteProcessingTemp = True
             continue
-            #sys.exit()
+           
         #inscricaoTomadorRe, inscricaoFilialRe = inscricoes
         inscricaoFilialRe, inscricaoTomadorRe = inscricoes
         logging.info(f'inscricaoFilialRe: {inscricaoFilialRe}')
@@ -205,6 +95,7 @@ def processCmat(servicos):
         logging.info(f'{len(pagsComNumeroDeInscricaoTomadorRe)} pages with same "Inscrição de Tomador"  number were found: {pagsComNumeroDeInscricaoTomadorRe}')
         if pagsComNumeroDeInscricaoTomadorRe == []:
             logging.info('Skipping register...')
+            flagIncompleteProcessingTemp = True
             continue
 
 
@@ -213,6 +104,7 @@ def processCmat(servicos):
         logging.info(f'{len(pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe)} pages with same "Inscrição de Filial" + "Resumo do Fechamento - Empresa" number were found: {pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe}')
         if pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe == []:
             logging.info('Skipping register...')
+            flagIncompleteProcessingTemp = True
             continue
 
         # Converter as listas para conjuntos
@@ -251,6 +143,7 @@ def processCmat(servicos):
         
         if returnRetFunction == []:
             logging.warning(f'No RET files were found for "Inscrição do Tomador": {inscricaoTomadorRe}. Skipping register...')
+            flagIncompleteProcessingTemp = True
             continue
         
         groupOfPagesRetFile, pdfPath, folderNumber = returnRetFunction
@@ -267,6 +160,8 @@ def processCmat(servicos):
         logging.info(f'--RET process finished for {contratoPuro}--')
 
         logging.info(f'Finished full process for contract "{contratoPuro}".\n')
+
+    return flagIncompleteProcessingPerm
 
         #deletePdfDirectories()
         #return
@@ -291,7 +186,13 @@ def processEquipesDeMontagem():
 
     fullListEdm = equipesDeMontagemSheetData()
 
+    flagIncompleteProcessingTemp = False
+    flagIncompleteProcessingPerm = False
+
     for index, lista in enumerate(fullListEdm):
+
+        if flagIncompleteProcessingTemp == True:
+            flagIncompleteProcessingPerm = True
 
         resultPagesRe = []
         resultPagesRet = []
@@ -316,6 +217,8 @@ def processEquipesDeMontagem():
 
         for indexNameExcel, nameExcel in enumerate(namesExcel):
 
+            if flagIncompleteProcessingTemp == True:
+                flagIncompleteProcessingPerm = True
 
             logging.info(f'--RE process start for name {nameExcel}--')
 
@@ -323,12 +226,14 @@ def processEquipesDeMontagem():
 
             if relFuncsFile == None:
                 logging.warning(f'Could not find Rel Funcs file for "{contratoPuro}" contract. Skipping register...')
+                flagIncompleteProcessingTemp = True
                 break
 
             namesList = extractRelFuncsPdfNames(pdfPath=relFuncsFile)
 
             if namesList == []:
                 logging.warning(f'No names were found in "{relFuncsFile}" file. Skipping register...')
+                flagIncompleteProcessingTemp = True
                 break
 
             logging.info(f'namesList: {namesList}')
@@ -341,6 +246,7 @@ def processEquipesDeMontagem():
                 
             if flagNameNotFound == True:
                 logging.info(f'Name from Excel "{nameExcel}" not found in names from Rel Funcs "{namesList}". Skipping register...')
+                flagIncompleteProcessingTemp = True
                 break
             
             
@@ -349,6 +255,7 @@ def processEquipesDeMontagem():
             
             if returnReFunction == []:
                 logging.warning(f'Retornou vazio para "{contratoPuro}". Skipping register...')
+                flagIncompleteProcessingTemp = True
                 break
         
         
@@ -357,6 +264,7 @@ def processEquipesDeMontagem():
             logging.info(f'Page wich contains {nameExcel} - {pageNumberFuncionario}')
             logging.info(f'{type(pageNumberFuncionario)} - {pageNumberFuncionario}')
             if pdfPath == None:
+                flagIncompleteProcessingTemp = True
                 break
             
             pdfPathRe = pdfPath
@@ -366,6 +274,7 @@ def processEquipesDeMontagem():
             inscricoes = extractBothNumeroInscricaoFromRe(pageNumberFuncionario, pdfPath)
             if inscricoes == [] or len(inscricoes) != 2:
                 logging.info(f'"inscricoes" not correct: "{inscricoes}". Skipping register...')
+                flagIncompleteProcessingTemp = True
                 continue
                 #sys.exit()
             #inscricaoTomadorRe, inscricaoFilialRe = inscricoes
@@ -377,6 +286,7 @@ def processEquipesDeMontagem():
             logging.info(f'{len(pagsComNumeroDeInscricaoTomadorRe)} pages with same "Inscrição de Tomador"  number were found: {pagsComNumeroDeInscricaoTomadorRe}.')
             if pagsComNumeroDeInscricaoTomadorRe == []:
                 logging.info('Skipping register...')
+                flagIncompleteProcessingTemp = True
                 continue
 
 
@@ -385,6 +295,7 @@ def processEquipesDeMontagem():
             logging.info(f'{len(pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe)} pages with same "Inscrição de Filial" + "Resumo do Fechamento - Empresa" number were found: {pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe}')
             if pagsComNumeroDeInscricaoFilialPlusResumoDoFechamentoEmpresaRe == []:
                 logging.info('Skipping register...')
+                flagIncompleteProcessingTemp = True
                 continue
             
             # Converter as listas para conjuntos
@@ -428,6 +339,7 @@ def processEquipesDeMontagem():
             
             if returnRetFunction == []:
                 logging.warning(f'No RET files were found for "Inscrição do Tomador": {inscricaoTomadorRe}. Skipping register...')
+                flagIncompleteProcessingTemp = True
                 break
             
             
@@ -461,6 +373,7 @@ def processEquipesDeMontagem():
 
         if resultPagesRe == []:
             logging.warning('RE - "resultPagesRe" is empty. Skipping to next contract...')
+            flagIncompleteProcessingTemp = True
             continue
         
         resultPagesRe = sum(resultPagesRe, [])
@@ -492,6 +405,7 @@ def processEquipesDeMontagem():
 
         if resultPagesRet == []:
             logging.warning('RET - "resultPagesRet" is empty. Skipping to next contract...')
+            flagIncompleteProcessingTemp = True
             continue
 
         resultPagesRet = sum(resultPagesRet, [])
@@ -515,4 +429,4 @@ def processEquipesDeMontagem():
         logging.info(f'Finished full process for names {namesExcel} in contract "{contratoPuro}".\n')
 
         #deletePdfDirectories()
-        #return
+    return flagIncompleteProcessingPerm

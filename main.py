@@ -2,26 +2,34 @@ from subprograms.process import *
 
 def main():
 
-    #processCmatEngenharia()
-
     logging.info(f'----- Starting CMAT ENGENHARIA process... -----')
-    processCmat(servicos=False)
+    flagIncompleteProcessingPermCmatEng = processCmat(servicos=False)
+    logging.warning(f'flagIncompleteProcessingPermCmatEng: {flagIncompleteProcessingPermCmatEng}')
     logging.info(f'----- Finished CMAT ENGENHARIA process. -----')
 
     logging.info(f'----- Starting CMAT SERVIÇOS process... -----')
-    processCmat(servicos=True)
+    flagIncompleteProcessingPermCmatServ = processCmat(servicos=True)
+    logging.warning(f'flagIncompleteProcessingPermCmatServ: {flagIncompleteProcessingPermCmatServ}')
     logging.info(f'----- Finished CMAT SERVIÇOS process. -----')
 
     logging.info(f'----- Starting EQUIPES DE MONTAGEM process... -----')
-    processEquipesDeMontagem()
+    flagIncompleteProcessingPermEdm = processEquipesDeMontagem()
+    logging.warning(f'flagIncompleteProcessingPermCmatEdm: {flagIncompleteProcessingPermEdm}')
     logging.info(f'----- Finished EQUIPES DE MONTAGEM process. -----')
-    
+
+    if flagIncompleteProcessingPermCmatEng == True or flagIncompleteProcessingPermCmatServ == True or flagIncompleteProcessingPermEdm == True:
+        return True
+    else:
+        return False
 
 if __name__ == '__main__':
     sys.excepthook = show_exception_and_exit
     sharepointGetExcelFile()
-    main()
+    flagIncompleteProcessing = main()
     logProcessingDuration(startTimer=startTimer)
     sharepointSendLog()
-    emailSuccess()
+    if flagIncompleteProcessing == False:
+        emailSuccess()
+    else:
+        emailIncompleteProcessing()
     sys.exit(0)
